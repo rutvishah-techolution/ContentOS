@@ -4,7 +4,7 @@ pieceId: linkedin-n5dqea
 channel: linkedin
 kind: campaign
 persona: Doctor
-approved: true
+approved: false
 ---
 
 # LinkedIn Storyline — AI cut diagnostic errors 42%. The hospitals that saw nothing bought the same tools.
@@ -41,7 +41,7 @@ approved: true
     "cta": "For leadership teams sitting on AI tools that demo well and deliver nothing—before the next renewal, see what three days on your own operations floor surfaces."
   },
   "chat": [],
-  "approved": true,
+  "approved": false,
   "generatedAt": "2026-07-23T11:53:42.480Z"
 }
 ```
