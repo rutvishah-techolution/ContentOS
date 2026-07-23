@@ -18,7 +18,14 @@ export interface FetchResult {
  */
 export async function fetchUrl(url: string): Promise<FetchResult> {
   if (!url || !/^https?:\/\//i.test(url)) {
-    return { ok: false, status: 0, finalUrl: url, snippet: "", error: "invalid or missing URL" };
+    return {
+      ok: false,
+      status: 0,
+      finalUrl: url,
+      snippet: "",
+      dead: false,
+      error: "invalid or missing URL",
+    };
   }
   try {
     const controller = new AbortController();

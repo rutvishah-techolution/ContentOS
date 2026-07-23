@@ -44,24 +44,6 @@ export const KIND_LABEL: Record<PieceKind, string> = {
   "thought-leadership": "Thought leadership",
 };
 
-/** One planned content piece: a distinct angle, a channel, and its author. */
-export interface PlanItem {
-  channel: Channel;
-  personaId: string;
-  personaName: string;
-  angle: string; // the distinct angle/topic this piece takes
-  headline: string; // proposed working headline
-  rationale: string; // why this angle + persona for this channel
-}
-
-/** The campaign content plan: one shared spine + distinct pieces. */
-export interface ContentPlan {
-  spine: string; // the campaign's single core message
-  items: PlanItem[];
-  generatedAt: string;
-  approved: boolean;
-}
-
 /** The narrative skeleton of one piece. */
 export interface Storyline {
   headline: string;
