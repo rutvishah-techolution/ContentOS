@@ -13,7 +13,10 @@ Rewrite every instance of:
 - "Moreover / Furthermore / Additionally" as sentence glue. Cut or rewrite.
 - Summary tails: "In conclusion," "Ultimately," "At the end of the day."
 - Uniform sentence length and identical paragraph shapes.
-- Em-dash overuse and perfectly balanced clauses in every sentence.
+- Em-dashes (—): remove every one. Replace with a period, comma, colon, or
+  parentheses, rewriting the sentence so it reads naturally without any dash used
+  as punctuation. Same for en-dashes (–) used mid-sentence. Perfectly balanced
+  clauses in every sentence.
 
 ## Add real voice
 - **Uneven rhythm.** Mix short and long. A 4-word sentence after a 25-word one

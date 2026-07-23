@@ -270,11 +270,18 @@ If — and ONLY if — the user explicitly asks you to change the draft, output 
   const history = doc.chat
     .map((m) => `${m.role === "user" ? "USER" : "YOU"}: ${m.content}`)
     .join("\n");
+  const priorStages = (Object.keys(doc.drafts) as DraftStage[])
+    .filter((s) => s !== doc.stage && doc.drafts[s])
+    .map((s) => `--- ${STAGE_LABEL[s]} ---\n${doc.drafts[s]}`)
+    .join("\n\n");
   const user = `VERIFIED RESEARCH:
 ${research}
 
 SOURCES:
 ${sourceList || "(none)"}
+
+EARLIER DRAFT VERSIONS (use these if the user asks what changed between drafts):
+${priorStages || "(none yet — this is the first draft)"}
 
 CURRENT DRAFT (${STAGE_LABEL[doc.stage]}):
 ${doc.content}

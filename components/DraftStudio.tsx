@@ -249,9 +249,15 @@ function DraftFullscreen({
                   <div className="mb-0.5 text-xs text-faint">
                     {m.role === "user" ? "You" : "Assistant"}
                   </div>
-                  <div className={m.role === "user" ? "text-fg" : "text-muted"}>
-                    {m.content}
-                  </div>
+                  {m.role === "user" ? (
+                    <div className="whitespace-pre-wrap text-fg">{m.content}</div>
+                  ) : (
+                    <div className="md md-compact text-muted">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {m.content}
+                      </ReactMarkdown>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
