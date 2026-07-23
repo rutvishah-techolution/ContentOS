@@ -4,7 +4,7 @@ pieceId: carousel-nrdipi
 channel: carousel
 kind: campaign
 persona: Ai For Humans
-approved: true
+approved: false
 ---
 
 # LinkedIn Carousel Storyline — Task Automation Saves Minutes. Workflow Automation Saves Weeks. Here's the Difference.
@@ -41,7 +41,7 @@ approved: true
     "cta": "Slide 9: If your team has automated plenty of tasks and the close still takes the same two weeks — that's the workflow talking, not the tools. Worth a conversation before your next planning cycle."
   },
   "chat": [],
-  "approved": true,
+  "approved": false,
   "generatedAt": "2026-07-23T11:34:35.138Z"
 }
 ```

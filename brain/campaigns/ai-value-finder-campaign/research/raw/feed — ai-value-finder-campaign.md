@@ -4,114 +4,101 @@ persona: Feed
 personaId: feed-persona
 stream: scout
 model: gemini
-generatedAt: 2026-07-22T14:42:09.669Z
-findingCount: 7
+generatedAt: 2026-07-23T11:48:57.184Z
+findingCount: 6
 ---
 
 # Feed — Raw Research
 
 ## Summary
 
-AI is blowing up enterprise budgets, and not always in a good way. Companies are pouring billions into AI, with agent adoption surging, but the ROI often isn't there, and the costs are frequently exceeding human labor. The real story isn't the shiny new models, it's the operational reality: companies are stuck in 'Pilot Purgatory,' struggling to scale, and facing significant strategic dependency risks that boards need to address.
+Enterprise AI is hitting a wall, and it's not a tech problem, it's a leadership and operational one. Companies are pouring money into AI, with 59% of organizations investing over $1 million annually, yet 79% are still struggling with adoption and 54% of C-suite executives admit AI is tearing their company apart. The real story isn't about the models, it's about the messy reality of data quality, governance, and proving actual ROI beyond the hype. The shift to agentic AI is accelerating, but without clear frameworks for cost, architecture, and C-suite alignment, most are just burning cash on pilots that never scale.
 
 ## Findings
 
-### 1. AI token and agent costs are exceeding the cost of human employees for equivalent tasks, a landmark admission from Microsoft.
+### 1. 79% of organizations are facing significant challenges in adopting AI in 2026, a double-digit increase from 2025.
 
-- **Evidence:** Microsoft has disclosed that its AI token and agent costs are exceeding the cost of human employees for equivalent tasks.
-- **Source:** https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/
-- **Why it matters:** Let's be real, the 'automation saves money' narrative is dead on arrival. If Microsoft, one of the biggest AI investors, is saying AI is more expensive than humans, every CFO needs to re-evaluate their entire cost model before betting on headcount reduction. This isn't a bug, it's a feature of current AI pricing.
+- **Evidence:** A 2026 survey found that 79% of organizations face challenges in adopting AI, with 54% of C-suite executives admitting that adopting AI is tearing their company apart. This is despite 59% of companies investing over $1 million annually in AI technology.
+- **Source:** https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9Ont9bbXap1y9sE_7nKsX9gUWSrfyHb4QnlFO6cEcuX2K_qX5BCdsn4rk61PCQ8uSBwVm1PsVzYUNgZJg8cEsycNRzBKfPP9KqbXOUhhJ3VFGqlgK4P31QcRcedZNV7ISkGxt18z3xaHR1NibLY=
+- **Why it matters:** This isn't just a hurdle; it's a crisis. If over half of C-suite execs feel AI is actively *damaging* their company despite massive investment, the problem isn't the tech, it's the strategy. Enterprises are clearly struggling to translate spend into value, and they need a reality check on their operational readiness.
 
-### 2. Uber reportedly blew through its annual AI budget in months, cutting Claude licenses, and Meta killed its internal AI usage leaderboard due to cost realities.
+### 2. 42% of AI projects were abandoned in 2025 due to unclear returns, with only 25% of AI initiatives achieving anticipated ROI in the last three years.
 
-- **Evidence:** Uber reportedly blew through its annual AI budget in months, companies cut Claude licenses, and Meta killed its internal AI usage leaderboard.
-- **Source:** https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/
-- **Why it matters:** This is the 'tokenmaxxing' trend colliding with reality. Companies pushed employees to maximize AI usage without a clear ROI strategy, and now the bills are due. It's a textbook example of the GenAI Paradox: broad adoption doesn't mean measurable business impact. Nobody's talking about the actual ROI, just the burn rate.
+- **Evidence:** Fortune 500 companies abandoned 42% of their AI projects in 2025, a significant jump from 17% the previous year. Only 25% of AI initiatives in the last three years delivered the ROI CEOs expected, and 97% of organizations are struggling to show clear business value from early Generative AI efforts.
+- **Source:** https://www.raisesummit.com/post/roi-dilemma-fortune-500-leaders-measuring-ai-value-2026
+- **Why it matters:** Companies are throwing money at AI and seeing nothing back. The 'pilot purgatory' is real, and it's costing them. This isn't about *if* AI works, but *how* it integrates into core operations to deliver measurable value. The current approach is clearly not working for most.
 
-### 3. Only 5% of companies achieve 'AI value at scale,' while 60% report minimal revenue and cost gains despite substantial investment.
+### 3. The shift from generative AI to agentic AI is accelerating, with Gartner predicting 33% of enterprise software applications will include agentic AI by 2028, up from less than 1% in 2024.
 
-- **Evidence:** BCG research is even more blunt: only 5% of companies are achieving 'AI value at scale,' while 60% report minimal revenue and cost gains despite substantial investment.
-- **Source:** https://masterofcode.com/blog/ai-roi
-- **Why it matters:** The 'AI, but ROI first' shift is finally here. Most companies are stuck in 'Pilot Purgatory,' running experiments that never scale. The real story is the gap between ambition and execution, and it's costing enterprises billions for minimal gains. You can't just throw AI at a problem and expect returns.
+- **Evidence:** In 2026, many organizations are shifting their AI strategy from generative AI to agentic AI, exploring AI systems that can make decisions and coordinate multi-step workflows with limited human involvement. Gartner predicts that by 2028, 33% of enterprise software applications will include agentic AI, a significant increase from less than 1% in 2024.
+- **Source:** https://www.ibm.com/think/insights/ai-adoption-challenges
+- **Why it matters:** Agentic AI is the next frontier, moving beyond simple chatbots to autonomous systems. This means more complex deployments, deeper integration into core processes, and a whole new set of governance and architectural challenges that most enterprises aren't ready for. The 'Claude Cowboys' are a symptom of this gap – business needs are outstripping central IT's ability to deliver.
 
-### 4. 85% of organizations want to be 'agentic' within three years, but 76% admit their current operations and infrastructure can't support that change.
+### 4. LLM API spending doubled in six months and is projected to reach $15 billion by the end of 2026, largely due to agentic workloads consuming significantly more tokens.
 
-- **Evidence:** While 85% of organizations say they want to be 'agentic' within three years, 76% admit their current operations and infrastructure can't support that change.
-- **Source:** https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/
-- **Why it matters:** Everyone wants to talk about AI agents, but nobody's talking about the messy reality of actually deploying them. This gap between ambition and execution is a massive red flag. Companies are chasing the tech without doing the foundational work, setting themselves up for more failed pilots.
+- **Evidence:** Enterprise LLM API spending doubled in six months from $3.5 billion in late 2024 to $8.4 billion by mid-2025, and is projected to reach $15 billion by the end of 2026. This surge is driven by agentic workloads that consume 10-100x more tokens per session than traditional chatbot deployments.
+- **Source:** https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH13l3MWUf52foLyt3HbgIaAJ-Rjhtd6qTpOq3-jOeEIg1hblPpBlt6sa9Gq08yTyp5HFVVR--MhiGGkfS67UhW91AwcONx3lHUg-J5fvcEGzGF0sIndxng0iK-Tzy8GQ4tmvOu8sC-4BxdnVNq2cFPtw==
+- **Why it matters:** Token anxiety is real. Companies are getting hit with massive, unexpected bills because they're scaling agentic systems without cost optimization strategies. This isn't just about reducing spend; it's about making AI economically viable for enterprise-wide deployment. Without addressing this, even successful pilots will face budget roadblocks.
 
-### 5. Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, and inadequate risk controls.
+### 5. 52% of businesses cite data quality and availability as the biggest barriers to AI adoption, with 37% facing specific data quality problems for AI readiness.
 
-- **Evidence:** Gartner expects more than 40% of agentic AI projects to be canceled by the end of 2027, citing escalating costs, unclear business value, and inadequate risk controls.
-- **Source:** https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFipx1K_iiFkyRtRYGc1qv_38G8lHHNM5dVNIwx-XhJIGz0zDfueUQFkVHPj6fsJfOhbIdoHo3Gt12GmwDN452-NX7lA9g0h45askV9JoRsSr2SUX3o0Ni3a4_soO8iEd2XfLdm-LwLY02KxrgOZrxgTS5xZHBQdrfWCMv9y_vbvAGXYF9XiBtCtAYqTw==
-- **Why it matters:** This isn't just about pausing projects; it's about outright cancellation. If you're a CIO or Chief AI Officer, this statistic has a personal edge. The problem isn't the tech, it's the lack of governance and the inability to prove actual business value beyond the demo. This is why a clear roadmap and defined workflows are critical.
+- **Evidence:** Process Excellence Network research indicates that 52% of businesses identify data quality and availability as the primary barriers to AI adoption, and 37% of organizations specifically struggle with data quality for AI readiness.
+- **Source:** https://aibusinessweekly.net/p/ai-adoption-statistics
+- **Why it matters:** The dirty secret of AI is the data. All the fancy models in the world won't fix garbage in, garbage out. Companies are realizing their foundational data infrastructure isn't ready for AI, and that's where the real work—and the real value—lies. It’s not about buying more AI; it’s about cleaning up the mess they already have.
 
-### 6. Enterprises relying entirely on third-party AI models are building strategic dependency on capabilities they don't own or control, creating concentration risk and vendor lock-in.
+### 6. Despite increased investment, CEOs and board members have significantly lower confidence in AI driving revenue growth (around 30%) compared to CIOs and other tech leaders (61%).
 
-- **Evidence:** KPMG warns that enterprises relying entirely on third-party AI models are building strategic dependency on capabilities they don't own or control. The piece argues this 'rented intelligence' model creates concentration risk, vendor lock-in, and potential business continuity threats.
-- **Source:** https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=5
-- **Why it matters:** Nobody's talking about the 'AI gravity' pulling companies into strategic dependencies. Renting intelligence is a risky way to run a business. Boards need to understand the concentration risk and vendor lock-in they're signing up for. This isn't just about cost; it's about control and business continuity.
-
-### 7. AI-exposed companies have tripled their lead in workforce productivity growth compared to the least exposed companies since 2022, with the top fifth achieving 163% productivity growth.
-
-- **Evidence:** Since 2022 when AI adoption soared, the most AI-exposed companies have tripled their lead in workforce productivity growth compared to the least exposed companies. There is a pronounced 'super-star' effect; the top fifth of most-exposed companies achieve stellar 163% productivity growth on average.
-- **Source:** https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html
-- **Why it matters:** Despite all the talk of cost overruns and pilot purgatory, the companies actually getting AI right are seeing massive productivity gains. This isn't about broad adoption; it's about focused, strategic implementation that generates a 'super-star' effect. The gap between winners and losers is widening, fast.
+- **Evidence:** A Protiviti survey found that while CIOs and other tech leaders report a 61% net confidence level that AI is driving revenue growth, trust among CEOs and board members is about half that rate, at approximately 30%.
+- **Source:** https://www.ciodive.com/news/ceos-cios-clash-ai-value/823823/
+- **Why it matters:** This is the core problem: a massive disconnect at the top. Tech leaders are bullish, but the people holding the purse strings aren't seeing the promised land. Until the C-suite is aligned on *how* AI delivers concrete business value, not just cool tech, this gap will continue to stall enterprise adoption and ROI. It’s not an AI problem, it’s an executive alignment problem.
 
 ## Data
 
 ```json
 {
-  "summary": "AI is blowing up enterprise budgets, and not always in a good way. Companies are pouring billions into AI, with agent adoption surging, but the ROI often isn't there, and the costs are frequently exceeding human labor. The real story isn't the shiny new models, it's the operational reality: companies are stuck in 'Pilot Purgatory,' struggling to scale, and facing significant strategic dependency risks that boards need to address.",
+  "summary": "Enterprise AI is hitting a wall, and it's not a tech problem, it's a leadership and operational one. Companies are pouring money into AI, with 59% of organizations investing over $1 million annually, yet 79% are still struggling with adoption and 54% of C-suite executives admit AI is tearing their company apart. The real story isn't about the models, it's about the messy reality of data quality, governance, and proving actual ROI beyond the hype. The shift to agentic AI is accelerating, but without clear frameworks for cost, architecture, and C-suite alignment, most are just burning cash on pilots that never scale.",
   "findings": [
     {
-      "claim": "AI token and agent costs are exceeding the cost of human employees for equivalent tasks, a landmark admission from Microsoft.",
-      "evidence": "Microsoft has disclosed that its AI token and agent costs are exceeding the cost of human employees for equivalent tasks.",
-      "sourceUrl": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
-      "sourceTitle": "Microsoft reports AI is more expensive than paying human employees (Fortune / Hacker News)",
-      "whyItMatters": "Let's be real, the 'automation saves money' narrative is dead on arrival. If Microsoft, one of the biggest AI investors, is saying AI is more expensive than humans, every CFO needs to re-evaluate their entire cost model before betting on headcount reduction. This isn't a bug, it's a feature of current AI pricing."
+      "claim": "79% of organizations are facing significant challenges in adopting AI in 2026, a double-digit increase from 2025.",
+      "evidence": "A 2026 survey found that 79% of organizations face challenges in adopting AI, with 54% of C-suite executives admitting that adopting AI is tearing their company apart. This is despite 59% of companies investing over $1 million annually in AI technology.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9Ont9bbXap1y9sE_7nKsX9gUWSrfyHb4QnlFO6cEcuX2K_qX5BCdsn4rk61PCQ8uSBwVm1PsVzYUNgZJg8cEsycNRzBKfPP9KqbXOUhhJ3VFGqlgK4P31QcRcedZNV7ISkGxt18z3xaHR1NibLY=",
+      "sourceTitle": "Enterprise AI adoption in 2026: Why 79% face challenges despite high investment",
+      "whyItMatters": "This isn't just a hurdle; it's a crisis. If over half of C-suite execs feel AI is actively *damaging* their company despite massive investment, the problem isn't the tech, it's the strategy. Enterprises are clearly struggling to translate spend into value, and they need a reality check on their operational readiness."
     },
     {
-      "claim": "Uber reportedly blew through its annual AI budget in months, cutting Claude licenses, and Meta killed its internal AI usage leaderboard due to cost realities.",
-      "evidence": "Uber reportedly blew through its annual AI budget in months, companies cut Claude licenses, and Meta killed its internal AI usage leaderboard.",
-      "sourceUrl": "https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/",
-      "sourceTitle": "NEA's Tiffany Luck: Enterprises Are Still Figuring Out AI ROI as 'Tokenmaxxing' Bills Come Due (TechCrunch AI)",
-      "whyItMatters": "This is the 'tokenmaxxing' trend colliding with reality. Companies pushed employees to maximize AI usage without a clear ROI strategy, and now the bills are due. It's a textbook example of the GenAI Paradox: broad adoption doesn't mean measurable business impact. Nobody's talking about the actual ROI, just the burn rate."
+      "claim": "42% of AI projects were abandoned in 2025 due to unclear returns, with only 25% of AI initiatives achieving anticipated ROI in the last three years.",
+      "evidence": "Fortune 500 companies abandoned 42% of their AI projects in 2025, a significant jump from 17% the previous year. Only 25% of AI initiatives in the last three years delivered the ROI CEOs expected, and 97% of organizations are struggling to show clear business value from early Generative AI efforts.",
+      "sourceUrl": "https://www.raisesummit.com/post/roi-dilemma-fortune-500-leaders-measuring-ai-value-2026",
+      "sourceTitle": "The ROI Dilemma: How Fortune 500 Leaders are Measuring AI Value in 2026.",
+      "whyItMatters": "Companies are throwing money at AI and seeing nothing back. The 'pilot purgatory' is real, and it's costing them. This isn't about *if* AI works, but *how* it integrates into core operations to deliver measurable value. The current approach is clearly not working for most."
     },
     {
-      "claim": "Only 5% of companies achieve 'AI value at scale,' while 60% report minimal revenue and cost gains despite substantial investment.",
-      "evidence": "BCG research is even more blunt: only 5% of companies are achieving 'AI value at scale,' while 60% report minimal revenue and cost gains despite substantial investment.",
-      "sourceUrl": "https://masterofcode.com/blog/ai-roi",
-      "sourceTitle": "AI ROI: Why Only 5% of Enterprises See Real Returns in 2026",
-      "whyItMatters": "The 'AI, but ROI first' shift is finally here. Most companies are stuck in 'Pilot Purgatory,' running experiments that never scale. The real story is the gap between ambition and execution, and it's costing enterprises billions for minimal gains. You can't just throw AI at a problem and expect returns."
+      "claim": "The shift from generative AI to agentic AI is accelerating, with Gartner predicting 33% of enterprise software applications will include agentic AI by 2028, up from less than 1% in 2024.",
+      "evidence": "In 2026, many organizations are shifting their AI strategy from generative AI to agentic AI, exploring AI systems that can make decisions and coordinate multi-step workflows with limited human involvement. Gartner predicts that by 2028, 33% of enterprise software applications will include agentic AI, a significant increase from less than 1% in 2024.",
+      "sourceUrl": "https://www.ibm.com/think/insights/ai-adoption-challenges",
+      "sourceTitle": "The Biggest AI Adoption Challenges for 2026 - IBM",
+      "whyItMatters": "Agentic AI is the next frontier, moving beyond simple chatbots to autonomous systems. This means more complex deployments, deeper integration into core processes, and a whole new set of governance and architectural challenges that most enterprises aren't ready for. The 'Claude Cowboys' are a symptom of this gap – business needs are outstripping central IT's ability to deliver."
     },
     {
-      "claim": "85% of organizations want to be 'agentic' within three years, but 76% admit their current operations and infrastructure can't support that change.",
-      "evidence": "While 85% of organizations say they want to be 'agentic' within three years, 76% admit their current operations and infrastructure can't support that change.",
-      "sourceUrl": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
-      "sourceTitle": "Rethinking organizational design in the age of agentic AI (MIT Technology Review)",
-      "whyItMatters": "Everyone wants to talk about AI agents, but nobody's talking about the messy reality of actually deploying them. This gap between ambition and execution is a massive red flag. Companies are chasing the tech without doing the foundational work, setting themselves up for more failed pilots."
+      "claim": "LLM API spending doubled in six months and is projected to reach $15 billion by the end of 2026, largely due to agentic workloads consuming significantly more tokens.",
+      "evidence": "Enterprise LLM API spending doubled in six months from $3.5 billion in late 2024 to $8.4 billion by mid-2025, and is projected to reach $15 billion by the end of 2026. This surge is driven by agentic workloads that consume 10-100x more tokens per session than traditional chatbot deployments.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH13l3MWUf52foLyt3HbgIaAJ-Rjhtd6qTpOq3-jOeEIg1hblPpBlt6sa9Gq08yTyp5HFVVR--MhiGGkfS67UhW91AwcONx3lHUg-J5fvcEGzGF0sIndxng0iK-Tzy8GQ4tmvOu8sC-4BxdnVNq2cFPtw==",
+      "sourceTitle": "LLM Cost Optimization: Why an AI Gateway Is the Missing Layer - Truefoundry",
+      "whyItMatters": "Token anxiety is real. Companies are getting hit with massive, unexpected bills because they're scaling agentic systems without cost optimization strategies. This isn't just about reducing spend; it's about making AI economically viable for enterprise-wide deployment. Without addressing this, even successful pilots will face budget roadblocks."
     },
     {
-      "claim": "Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, and inadequate risk controls.",
-      "evidence": "Gartner expects more than 40% of agentic AI projects to be canceled by the end of 2027, citing escalating costs, unclear business value, and inadequate risk controls.",
-      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFipx1K_iiFkyRtRYGc1qv_38G8lHHNM5dVNIwx-XhJIGz0zDfueUQFkVHPj6fsJfOhbIdoHo3Gt12GmwDN452-NX7lA9g0h45askV9JoRsSr2SUX3o0Ni3a4_soO8iEd2XfLdm-LwLY02KxrgOZrxgTS5xZHBQdrfWCMv9y_vbvAGXYF9XiBtCtAYqTw==",
-      "sourceTitle": "Agentic AI Enterprise Adoption: 2026 Roadmap From Pilots to Production - Ema AI",
-      "whyItMatters": "This isn't just about pausing projects; it's about outright cancellation. If you're a CIO or Chief AI Officer, this statistic has a personal edge. The problem isn't the tech, it's the lack of governance and the inability to prove actual business value beyond the demo. This is why a clear roadmap and defined workflows are critical."
+      "claim": "52% of businesses cite data quality and availability as the biggest barriers to AI adoption, with 37% facing specific data quality problems for AI readiness.",
+      "evidence": "Process Excellence Network research indicates that 52% of businesses identify data quality and availability as the primary barriers to AI adoption, and 37% of organizations specifically struggle with data quality for AI readiness.",
+      "sourceUrl": "https://aibusinessweekly.net/p/ai-adoption-statistics",
+      "sourceTitle": "AI Adoption Statistics: Business & Enterprise Data 2026 - AI Business Weekly",
+      "whyItMatters": "The dirty secret of AI is the data. All the fancy models in the world won't fix garbage in, garbage out. Companies are realizing their foundational data infrastructure isn't ready for AI, and that's where the real work—and the real value—lies. It’s not about buying more AI; it’s about cleaning up the mess they already have."
     },
     {
-      "claim": "Enterprises relying entirely on third-party AI models are building strategic dependency on capabilities they don't own or control, creating concentration risk and vendor lock-in.",
-      "evidence": "KPMG warns that enterprises relying entirely on third-party AI models are building strategic dependency on capabilities they don't own or control. The piece argues this 'rented intelligence' model creates concentration risk, vendor lock-in, and potential business continuity threats.",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=5",
-      "sourceTitle": "Renting intelligence is a risky way to run a business (KPMG)",
-      "whyItMatters": "Nobody's talking about the 'AI gravity' pulling companies into strategic dependencies. Renting intelligence is a risky way to run a business. Boards need to understand the concentration risk and vendor lock-in they're signing up for. This isn't just about cost; it's about control and business continuity."
-    },
-    {
-      "claim": "AI-exposed companies have tripled their lead in workforce productivity growth compared to the least exposed companies since 2022, with the top fifth achieving 163% productivity growth.",
-      "evidence": "Since 2022 when AI adoption soared, the most AI-exposed companies have tripled their lead in workforce productivity growth compared to the least exposed companies. There is a pronounced 'super-star' effect; the top fifth of most-exposed companies achieve stellar 163% productivity growth on average.",
-      "sourceUrl": "https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html",
-      "sourceTitle": "AI Jobs Barometer - PwC",
-      "whyItMatters": "Despite all the talk of cost overruns and pilot purgatory, the companies actually getting AI right are seeing massive productivity gains. This isn't about broad adoption; it's about focused, strategic implementation that generates a 'super-star' effect. The gap between winners and losers is widening, fast."
+      "claim": "Despite increased investment, CEOs and board members have significantly lower confidence in AI driving revenue growth (around 30%) compared to CIOs and other tech leaders (61%).",
+      "evidence": "A Protiviti survey found that while CIOs and other tech leaders report a 61% net confidence level that AI is driving revenue growth, trust among CEOs and board members is about half that rate, at approximately 30%.",
+      "sourceUrl": "https://www.ciodive.com/news/ceos-cios-clash-ai-value/823823/",
+      "sourceTitle": "CEOs, CIOs clash over AI's value - CIO Dive",
+      "whyItMatters": "This is the core problem: a massive disconnect at the top. Tech leaders are bullish, but the people holding the purse strings aren't seeing the promised land. Until the C-suite is aligned on *how* AI delivers concrete business value, not just cool tech, this gap will continue to stall enterprise adoption and ROI. It’s not an AI problem, it’s an executive alignment problem."
     }
   ],
   "error": null

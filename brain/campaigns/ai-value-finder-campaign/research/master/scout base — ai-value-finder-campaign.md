@@ -2,37 +2,45 @@
 campaign: "[[ai-value-finder-campaign]]"
 stream: scout
 topic: A 3-day engagement with an enterprise's leadership team to map out the operations and workflows that need automation. The output is a board-ready AI roadmap built entirely from the company's own operational reality.
-verified: 7
+verified: 9
 flagged: 3
-stripped: 4
-generatedAt: 2026-07-22T14:44:10.306Z
+stripped: 7
+generatedAt: 2026-07-23T11:50:29.649Z
 ---
 
 # Scout Research Base
 ## Overview
 
-Enterprise AI has moved from experiment to strategic priority, yet the gap between ambition and realized value remains wide. Leadership teams now face a paradox: AI-exposed companies are pulling decisively ahead on productivity, while the majority of organizations report minimal returns, escalating costs, and infrastructure that cannot support their stated goals. The research below organizes the current landscape into four themes—the economics of AI at scale, the value gap, the readiness deficit, and the shifting competitive terrain—that together frame why a roadmap grounded in a company's own operational reality has become a board-level concern.
+Enterprise AI adoption has reached near-universal scale, yet the gap between deployment and measurable business value remains the defining problem for leadership teams. As adoption shifts from generative to agentic AI, the organizations that succeed are those grounding AI initiatives in their own operational reality—prioritizing workflow redesign over technology acquisition. The findings below map the adoption-value gap, the strategic pressures reshaping competition, the structural barriers that cause failure, and the emerging boardroom trust deficit.
 
-## The Economics of AI at Scale Are Under Pressure
+## The Adoption-Value Gap
 
-The assumption that AI automatically lowers operating costs is being challenged at the highest levels. Microsoft has disclosed that its AI token and agent costs are exceeding the cost of human employees for equivalent tasks ([source](https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/)). Similar cost realities are surfacing across major operators: Uber reportedly blew through its annual AI budget in months and cut Claude licenses, and Meta killed its internal AI usage leaderboard ([source](https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/)).
+AI adoption is now nearly universal: 91% of businesses use AI in at least one capacity in 2026, up from 78% in 2024 ([source](https://aibusinessweekly.net/p/ai-adoption-statistics)). But scale has not translated into returns. MIT's Project NANDA found that 95% of enterprise generative AI pilots fail to deliver measurable P&L impact, and McKinsey reports that only 39% of organizations see any EBIT impact from AI ([source](https://aibusinessweekly.net/p/ai-adoption-statistics)).
 
-Dependency on external providers compounds the financial exposure. Enterprises relying entirely on third-party AI models are building strategic dependency on capabilities they don't own or control, creating concentration risk, vendor lock-in, and potential business continuity threats ([source](https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=5)).
+The abandonment rate underscores the problem. Fortune 500 companies abandoned 42% of their AI projects in 2025, a sharp increase from 17% the prior year, driven by unclear returns. Only 25% of AI initiatives over the last three years delivered the ROI CEOs expected, and 97% of organizations struggle to show clear business value from early generative AI efforts ([source](https://www.raisesummit.com/post/roi-dilemma-fortune-500-leaders-measuring-ai-value-2026)).
 
-## The Value Gap Between Investment and Return
+## The Shift to Agentic AI
 
-Substantial spending is not translating into measurable results for most organizations. Only 5% of companies are achieving "AI value at scale," while 60% report minimal revenue and cost gains despite substantial investment ([source](https://masterofcode.com/blog/ai-roi)). At the same time, ambition far outpaces capability: 85% of organizations say they want to be "agentic" within three years, but 76% admit their current operations and infrastructure can't support that change ([source](https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/)).
+The market is moving from generative AI toward agentic systems that make decisions and coordinate multi-step workflows with limited human involvement. Gartner predicts that by 2028, 33% of enterprise software applications will include agentic AI, up from less than 1% in 2024 ([source](https://www.ibm.com/think/insights/ai-adoption-challenges)). Enterprise adoption of AI agents is projected to increase by 300% within the next two years ([source](https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/)).
 
-For the minority that do get it right, the payoff is significant. Since 2022, the most AI-exposed companies have tripled their lead in workforce productivity growth compared to the least exposed companies, with a pronounced "super-star" effect in which the top fifth of most-exposed companies achieve 163% productivity growth on average ([source](https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html)).
+This shift is already visible in the finance function. OpenAI and PwC announced a partnership to deploy AI agents that automate finance workflows, improve forecasting, and modernize the CFO function ([source](https://openai.com/index/openai-pwc-finance-collaboration/)).
 
-## Readiness Is a People and Process Problem, Not a Technology Problem
+## Competitive Pressure on Incumbents
 
-The dominant barriers to successful adoption sit inside the organization rather than in the technology stack. Around 70% of AI implementation challenges are attributed to people- and process-related issues, while only 20% are technical, with organizational readiness—rather than data model quality—cited as the core problem for enterprise adoption ([source](https://www.organizing4innovation.com/ai-leadership-challenges/)).
+Agentic AI is compressing the scale advantages that have historically protected large enterprises. Harvard Business Review analysis details how agentic AI "supercharges startups" and "threatens incumbents," enabling smaller players to compete at a scale previously reserved for large enterprises and eroding established competitive moats ([source](https://hbr.org/2026/07/how-agentic-ai-supercharges-startups-and-threatens-incumbents)).
 
-Where technical friction does arise, it is largely a matter of fit with existing environments. Enterprise adoption of agentic AI is slowed by the difficulty of implementing it across the complex systems, tools, workflows, and data environments used by large organizations, and integrating AI with legacy systems and processes remains a significant technical and operational challenge ([source](https://firstpagesage.com/reports/agentic-ai-adoption-statistics/)).
+## Structural Barriers and Strategic Risks
 
-## AI Is Now a Board-Level Competitive Strategy
+Data readiness is the leading obstacle. Process Excellence Network research indicates 52% of businesses identify data quality and availability as the primary barriers to AI adoption, and 37% specifically struggle with data quality for AI readiness ([source](https://aibusinessweekly.net/p/ai-adoption-statistics)).
 
-AI has become central to how executives frame competitive advantage. AI is mentioned in 24% of CEOs' top two strategic priorities for 2024, a significant rise from 4% in 2023, and 59% of CEOs believe AI will be the most impactful technology for their industry in the next three years ([source](https://www.conference-board.org/research/policy-backgrounders/ai-and-the-c-suite-implications-for-ceo-strategy-in-2026)).
+Dependency on external models introduces further risk. KPMG warns against "rented intelligence," noting that heavy reliance on third-party AI models exposes organizations to vendor lock-in, concentration risk, and potential business continuity threats ([source](https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=1)).
 
-The strategic urgency is heightened by a shift in where advantage accrues. Agentic AI disproportionately benefits startups by automating workflows that previously required enterprise-scale operations, meaning competitive moats built on operational complexity are eroding ([source](https://hbr.org/2026/07/how-agentic-ai-supercharges-startups-and-threatens-incumbents)).
+Multi-agent coordination remains technically immature. Stanford HAI research found that AI coding agents fail at teamwork, with two agents performing worse than a single agent on collaborative tasks ([source](https://hai.stanford.edu/news/ai-coding-agents-fail-at-teamwork)).
+
+## Workflow-First over Technology-First
+
+The dominant cause of value shortfall is sequencing: deploying technology before redesigning operations. McKinsey research, cited by MIT Technology Review, finds that organizations capture less than one-third of the expected value from digital investments when they prioritize technology capabilities over customer needs and workflow redesign ([source](https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering/)).
+
+## The Boardroom Trust Deficit
+
+Confidence in AI's business impact splits sharply along leadership lines. A Protiviti survey found that CIOs and other tech leaders report a 61% net confidence level that AI is driving revenue growth, while trust among CEOs and board members runs at roughly half that rate—approximately 30% ([source](https://www.ciodive.com/news/ceos-cios-clash-ai-value/823823/)).

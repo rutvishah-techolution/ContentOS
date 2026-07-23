@@ -1,7 +1,7 @@
 ---
 campaign: "[[ai-value-finder-campaign]]"
 topic: A 3-day engagement with an enterprise's leadership team to map out the operations and workflows that need automation. The output is a board-ready AI roadmap built entirely from the company's own operational reality.
-generatedAt: 2026-07-22T14:44:19.523Z
+generatedAt: 2026-07-23T11:50:45.570Z
 ---
 
 # Source Validation Log
@@ -10,84 +10,109 @@ Record of what the source-check stripped or flagged, and why. Feeds the source-v
 
 ## Campaign stream
 
-- Verified: **12** · Flagged: **5** · Stripped: **3**
+- Verified: **13** · Flagged: **8** · Stripped: **2**
 
-- **FLAG** — Only 12% of CEOs report AI has delivered both cost and revenue benefits, while 56% report it has produced neither — a majority that cannot demonstrate any return on AI spend.
+- **FLAG** — MIT's data shows AI budgets are misallocated: money flows to sales and marketing while the better ROI sits in operations and finance, and externally-built tools succeed twice as often as internal builds.
   - Persona: Auditor
-  - Reason: Figure 12% appears in the source but in a different context.
-  - Source: https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html
-
-- **FLAG** — Of $30–40 billion in enterprise GenAI investment, roughly 95% of pilots delivered no measurable P&L impact; only 5% created significant value, and the difference was tight integration into real business processes, not model quality.
-  - Persona: Auditor
-  - Reason: Figure 95% appears in the source but in a different context.
-  - Source: https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide.aspx
-
-- **FLAG** — MIT's data shows companies misallocate GenAI budget toward visible sales and marketing functions, while back-office automation like customer service and document review delivers higher returns — case studies show $2–10M in annual savings by replacing outsourced support.
-  - Persona: Auditor
-  - Reason: Figure 30% appears in the source but in a different context.
+  - Reason: Claimed figure (2x) does not appear in the source text.
   - Source: https://www.legal.io/blog/5719519/MIT-Report-Finds-95-of-AI-Pilots-Fail-to-Deliver-ROI-Exposing-GenAI-Divide
 
-- **FLAG** — AI inference costs now consume 80–90% of total compute dollars over a model's lifecycle — a 15–20x multiplier over training cost — and inference has grown from 33% of AI infrastructure spend in 2023 to 55% in early 2026.
+- **FLAG** — The heaviest AI adopters now spend $7,500 per employee per month on AI, growing 14.1% in a single month, while the median firm spends $11.38—a gap that reframes the debate on hard spend data rather than projections.
   - Persona: Auditor
-  - Reason: Figure 90% appears in the source but in a different context.
-  - Source: https://byteiota.com/ai-inference-costs-2026-the-hidden-15-20x-gpu-crisis/
+  - Reason: Figure 14.1% appears in the source but in a different context.
+  - Source: https://ramp.com/data/ai-index-june-2026
 
-- **STRIP** — 92% of CFOs and top finance executives feel pressured to demonstrate a decent return on their AI investments.
+- **FLAG** — Enterprise AI bills have tripled despite a 98% drop in per-token prices, because agentic tools drive roughly 30x higher cost per interaction and consume far more tokens per task.
+  - Persona: Auditor
+  - Reason: Figure 98% appears in the source but in a different context.
+  - Source: https://thenextweb.com/news/ai-pilled-firms-7500-per-employee-spending
+
+- **FLAG** — Even the AI-pilled generate no institutional learning: 99.5% of employees at heavy adopters use AI tools, yet companies capture no durable competitive advantage—the GenAI Paradox.
+  - Persona: Auditor
+  - Reason: Figure 84% appears in the source but in a different context.
+  - Source: https://www.forbes.com/sites/jemmagreen/2026/07/02/ai-costs-more-than-the-people-it-replaced/
+
+- **STRIP** — Many AI projects fail to deliver financial value, with 95% of generative AI projects in 2025 failing to show financial value within six months.
   - Persona: Doctor
   - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://www.cfodive.com/news/cfo-ai-roi-pressure-avalara-survey/721200/
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7zznkS4tYweq_3p92dONMxOq6y98mRhwPT-S-iRiahShjtgktu81Anw1svRF9nh1uFdLCVSyTI_10HohK8MRarp6kWd6yILrPh846T5CZNFV3znePTjxyNGPMN91YKdqVzbQqDzfbGlTbzMuIWa4Y8T6CtkHXj7WTaqIBJpnNHBjt3t2ZSlxghY0-
 
-- **FLAG** — Despite significant investment—59% of companies are spending over $1 million annually on AI technology—79% of organizations face challenges in AI adoption, a double-digit increase from 2025.
+- **FLAG** — AI-powered clinical decision support systems can achieve up to 94% accuracy in tumor detection and lead to a 42% reduction in diagnostic errors in AI-supported hospitals.
   - Persona: Doctor
-  - Reason: Claimed figure (59%) does not appear in the source text.
-  - Source: https://www.marketscale.com/industries/software-and-technology/enterprise-ai-moves-from-pilot-to-production-in-2026-but-gaps-in-governance-and-talent-persist/
+  - Reason: Figure 94% appears in the source but in a different context.
+  - Source: https://info.productiveedge.com/blog/the-roi-of-ai-in-healthcare-what-the-numbers-actually-show
 
-- **STRIP** — A recent MIT study found that 95% of enterprise AI initiatives fail.
+- **FLAG** — Automation in Fortune 500 companies is saving employees an average of 2.5 hours per day, and 93.7% of Fortune 1000 companies report measurable business value from AI initiatives.
   - Persona: Doctor
+  - Reason: Source blocked/unreadable (weak source) — link is real but the figure couldn't be confirmed.
+  - Source: https://tezeract.ai/how-fortune-500-companies-using-ai/
+
+- **FLAG** — Only 10 percent of Fortune 500 companies that deploy active AI agents maintain formal governance programs, creating a measurable gap between adoption and institutional control.
+  - Persona: Policy Insider
+  - Reason: Source blocked/unreadable (primary source) — link is real but the figure couldn't be confirmed.
+  - Source: https://www.gartner.com/en/documents/enterprise-ai-governance-2026
+
+- **FLAG** — Gartner forecasts that 60 percent of agentic AI projects will fail in 2026 specifically because organizations lack AI-ready data and standardized taxonomy.
+  - Persona: Policy Insider
+  - Reason: Source blocked/unreadable (primary source) — link is real but the figure couldn't be confirmed.
+  - Source: https://www.gartner.com/en/documents/agentic-ai-data-readiness-2026
+
+- **STRIP** — MIT's 2026 enterprise study found that 95 percent of generative AI pilots fail to reach production or deliver measurable P&L impact.
+  - Persona: Policy Insider
   - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://www.weforum.org/stories/all/cost-productivity-gains-and-the-human-factor-a-cfos-guide-to-ai-investment/
-
-- **STRIP** — In 2026, organizations using agentic AI systems in supply chains can achieve double-digit efficiency gains and reduce decision latency from days to seconds.
-  - Persona: Doctor
-  - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://www.dataiku.com/blog/supply-chain-ai-trends-2026-building-resilient-operations
+  - Source: https://www.technologyreview.com/2026/enterprise-ai-pilot-failure-rates/
 
 ## Scout stream
 
-- Verified: **7** · Flagged: **3** · Stripped: **4**
+- Verified: **9** · Flagged: **3** · Stripped: **7**
 
-- **STRIP** — Gartner predicts over 40% of agentic AI projects will be canceled by the end of 2027 due to escalating costs, unclear business value, and inadequate risk controls.
+- **FLAG** — 91% of businesses are using AI in at least one capacity in 2026, a significant jump from 78% in 2024.
+  - Persona: Ai For Humans
+  - Reason: Figure 91% appears in the source but in a different context.
+  - Source: https://aibusinessweekly.net/p/ai-adoption-statistics
+
+- **FLAG** — Despite widespread adoption, 95% of enterprise generative AI pilots fail to deliver measurable P&L impact, and only 39% of organizations report any EBIT impact from AI.
+  - Persona: Ai For Humans
+  - Reason: Figure 95% appears in the source but in a different context.
+  - Source: https://aibusinessweekly.net/p/ai-adoption-statistics
+
+- **STRIP** — Companies that deploy AI deeply are seeing 6 times the ROI compared to those stuck in pilots, yet only 17% of organizations have achieved this level of return.
+  - Persona: Ai For Humans
+  - Reason: Link is dead (404 / not found) — removed.
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPFgiZdIXIPuRprZZBj-WO3gDIOKZtqdi_i3ZbrZ6QK6I1zSYEGstQHB8SvA92RFBieSoc1hs3MHnXRQa3lkx3xRoN8K6UreKRz6zsAvngBgWgD19tO1jhfufNHC6FBGQh2w1Te74h_ybWYOPmlQksUN1nKBWVLgcrWF8XGSGrfM2Ganwebc1RJqtQDA7YYkHMQUCOzNiQktclbbLvNUw_rVWkbLwSvNcQai3VLUiX5tnVOe9W4FPzRlfHy_h3c9jCMdyGK1UYz-Lb7ZjRte3AJoqnyHXMdQ
+
+- **STRIP** — Agentic AI is expected to drive significant ROI, with average returns projected to reach US$17.6 million in the next two years, quadrupling from previous estimates.
+  - Persona: Ai For Humans
+  - Reason: Link is dead (404 / not found) — removed.
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHJd1_0e8p3ImHWg6VhQ5d3xKaGjDi1jkwsbYGasEtbZJSicaOsXQS0WzhvzgjuGsJdjRsnyEYf5_IPWcPdJ2kpCeUyK_BK-paGrqZcUFiFDJVXdB8JlOV1wjDkZunazXDgf_khLZTQDw_yqI5frSawO8MiFAP_UzKzsGbpN3Wh9J7KQTi3mX7CCBiFFRGn4o3Ar5uhYkAMDRhr-L
+
+- **STRIP** — 80% of Fortune 500 companies now have active AI agents, but only about 11% have achieved true production-scale deployment.
+  - Persona: Ai For Humans
+  - Reason: Link is dead (404 / not found) — removed.
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFut3mnr8s9qq5TxN7_uaOVeDyDWVx3WnuOFIp7U_L5cwDhRWslPwEyiEDH36q5RGvix86Hyty9tdivKvYTlhPqn1GV454L87XV-ejYhIu7iFfA7rgHL3gaax3ASg4TqFV0AJ7X1EOjXF-ysvAnlBEdsEYMTH4dy5aiDWLCyLbGmGhcDoDXBJtRzQnC6pgMKKyGdiVzQ7d3OF_pzg==
+
+- **STRIP** — In 2026, creating operational efficiencies is the single top priority for AI adoption, cited by 34% of business leaders.
+  - Persona: Ai For Humans
+  - Reason: Link is dead (404 / not found) — removed.
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGnBHQFZLDwuHIYGeqzJ8dz0XtfCG-c9qeukS4Z7Wbr6HIclRou4EhVWDCOAxdsd8xTkYZR6fn31hokVTv33r15w90RT2pRh1lfGIG9iSOgrlEIod1YcLc6-pgsX8OJlJ9aMGRmkk0Ybfxvdy8cn6n7Zbev_V6H
+
+- **STRIP** — 79% of organizations are facing significant challenges in adopting AI in 2026, a double-digit increase from 2025.
   - Persona: Feed
   - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFipx1K_iiFkyRtRYGc1qv_38G8lHHNM5dVNIwx-XhJIGz0zDfueUQFkVHPj6fsJfOhbIdoHo3Gt12GmwDN452-NX7lA9g0h45askV9JoRsSr2SUX3o0Ni3a4_soO8iEd2XfLdm-LwLY02KxrgOZrxgTS5xZHBQdrfWCMv9y_vbvAGXYF9XiBtCtAYqTw==
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9Ont9bbXap1y9sE_7nKsX9gUWSrfyHb4QnlFO6cEcuX2K_qX5BCdsn4rk61PCQ8uSBwVm1PsVzYUNgZJg8cEsycNRzBKfPP9KqbXOUhhJ3VFGqlgK4P31QcRcedZNV7ISkGxt18z3xaHR1NibLY=
 
-- **FLAG** — AI is no longer an experimental technology but a core component of competitive strategy for enterprises, with CEOs increasingly prioritizing AI investments over other areas like product innovation or customer experience.
-  - Persona: Interviewer
-  - Reason: Figure 4% appears in the source but in a different context.
-  - Source: https://www.conference-board.org/research/policy-backgrounders/ai-and-the-c-suite-implications-for-ceo-strategy-in-2026
+- **STRIP** — LLM API spending doubled in six months and is projected to reach $15 billion by the end of 2026, largely due to agentic workloads consuming significantly more tokens.
+  - Persona: Feed
+  - Reason: Link is dead (404 / not found) — removed.
+  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH13l3MWUf52foLyt3HbgIaAJ-Rjhtd6qTpOq3-jOeEIg1hblPpBlt6sa9Gq08yTyp5HFVVR--MhiGGkfS67UhW91AwcONx3lHUg-J5fvcEGzGF0sIndxng0iK-Tzy8GQ4tmvOu8sC-4BxdnVNq2cFPtw==
 
-- **STRIP** — Despite increased investment and optimism from CEOs, a significant percentage of enterprise AI initiatives still fail to deliver measurable ROI, with some studies indicating up to 95% of AI pilots do not yield a return.
+- **FLAG** — Despite increased investment, CEOs and board members have significantly lower confidence in AI driving revenue growth (around 30%) compared to CIOs and other tech leaders (61%).
+  - Persona: Feed
+  - Reason: Figure 61% appears in the source but in a different context.
+  - Source: https://www.ciodive.com/news/ceos-cios-clash-ai-value/823823/
+
+- **STRIP** — Many enterprises are struggling to realize AI ROI, leading to a 'tokenmaxxing' backlash where initial high AI usage costs are colliding with a lack of measurable business impact.
   - Persona: Interviewer
   - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYc36q_jApJUKsLkEvSR49y6jfwSl88PsjTcQiLdoNfM-5riTyQfp6dRSXrVF-ZmGGEwgMQ730_mWaJsMhrOxj7qye187wTgPi3IWFubQIABHdl_0mQ-69RJdCTLzGwT1bi_pXh4PdVr6R0gUpyvvE2kWs41aq54YCub2y7Wdk
-
-- **FLAG** — The primary barriers to successful AI adoption in enterprises are often human and process-related, not technical, with challenges stemming from organizational readiness, change management, and leadership alignment.
-  - Persona: Interviewer
-  - Reason: Source blocked/unreadable (weak source) — link is real but the figure couldn't be confirmed.
-  - Source: https://www.organizing4innovation.com/ai-leadership-challenges/
-
-- **STRIP** — CFOs are increasingly pivotal in AI investment, moving beyond financial stewardship to become strategic champions who align AI initiatives with business value, enforce ROI discipline, and manage associated risks.
-  - Persona: Interviewer
-  - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8zAoP7h-Q5CU-OJ06UI4DnKxfI2i6nYLGe9JD7P3y2HFgkFb8KDDlkqJO5Sbyqne4gaTzCwRqqKoC8PyYiB26GI8J62ujYJMUk3LUX6ae8nM0FZiklE5MkhhBv6aJlYzIh1R-pH2FSz45xOhP7Wu4ASUZ6d47i0C7MYazBe7ojxC0l39E73f28rcI1vuCacml4JBXkFzLbcoaf9wS1iP5YT0NBYmou4icozD4IKgc
-
-- **STRIP** — Successful enterprise AI roadmaps move beyond isolated experiments to align AI investments with clear business outcomes, requiring mature data foundations, robust governance, and a focus on integrating AI into real workflows.
-  - Persona: Interviewer
-  - Reason: Link is dead (404 / not found) — removed.
-  - Source: https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFAYdogmrVFWx9-r176e6-G19kaQIdauvckfZHpDfL7sCZJuGiRm5Emc72ayOSfKc5LkC4CjbJvMZi9kJIdzzvpDzbQ-Q-1nQKJqofY0I42tamw7bsW8a24pTV01xBd2RIC2cV1w==
-
-- **FLAG** — Enterprise AI adoption is hampered by the complexity of integrating AI across existing intricate systems, tools, workflows, and diverse data environments within large organizations.
-  - Persona: Interviewer
-  - Reason: Non-numeric claim; weak source, not independently confirmable.
-  - Source: https://firstpagesage.com/reports/agentic-ai-adoption-statistics/
+  - Source: https://techcrunch.com/video/neas-tiffany-luck-says-entereprises-are-still-figuring-out-their-ai-roi/
 

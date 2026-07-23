@@ -115,20 +115,23 @@ function StorylineCard({
     }
   }
 
-  async function approve() {
+  async function toggleApprove() {
+    const next = !doc.approved;
     setBusy("approve");
     try {
       const res = await fetch(`/api/campaigns/${slug}/storylines/${doc.id}/approve`, {
         method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ approved: next }),
       });
-      if (res.ok) onUpdate({ ...doc, approved: true });
+      if (res.ok) onUpdate({ ...doc, approved: next });
     } finally {
       setBusy(null);
     }
   }
 
   return (
-    <div className="card">
+    <div className={`card ${doc.approved ? "approved-card" : ""}`}>
       <div className="mb-2 flex items-center justify-between">
         <span className="flex items-center gap-2">
           <span className="badge">{CHANNEL_LABELS[doc.channel]}</span>
@@ -227,9 +230,24 @@ function StorylineCard({
             >
               {busy === "revise" ? "Revising…" : "Send"}
             </button>
-            <button className="btn-primary" onClick={approve} disabled={busy !== null}>
-              {busy === "approve" ? "Approving…" : "Approve"}
-            </button>
+            {doc.approved ? (
+              <button
+                className="btn-ghost"
+                onClick={toggleApprove}
+                disabled={busy !== null}
+                title="Undo approval — puts it back to draft"
+              >
+                {busy === "approve" ? "Updating…" : "✓ Approved · Undo"}
+              </button>
+            ) : (
+              <button
+                className="btn-primary"
+                onClick={toggleApprove}
+                disabled={busy !== null}
+              >
+                {busy === "approve" ? "Approving…" : "Approve"}
+              </button>
+            )}
           </div>
         </div>
       )}

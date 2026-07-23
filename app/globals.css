@@ -180,6 +180,13 @@ body::after {
       border-color 0.18s ease;
   }
 
+  /* approved card: a subtle brand-colored accent bar on the left */
+  .approved-card {
+    box-shadow:
+      inset 3px 0 0 0 var(--fg),
+      0 1px 2px rgba(17, 17, 16, 0.04);
+  }
+
   /* stat tiles: a faint vertical fade + a touch more lift */
   .stat-card {
     background: linear-gradient(180deg, #ffffff 0%, #fbfbfa 100%);

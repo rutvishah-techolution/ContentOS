@@ -236,14 +236,16 @@ export async function editStoryline(
 export async function approveStoryline(
   slug: string,
   id: string,
+  approved = true,
 ): Promise<{ allApproved: boolean }> {
   const doc = await readDoc(slug, id);
   if (!doc) throw new Error("Storyline not found.");
-  doc.approved = true;
+  doc.approved = approved;
   await writeDoc(slug, doc);
   const all = await readStorylines(slug);
   const allApproved = all.length > 0 && all.every((d) => d.approved);
-  if (allApproved) await setCampaignStatus(slug, "ready-for-draft");
+  // reflect state both ways (undo an approval should walk the status back)
+  await setCampaignStatus(slug, allApproved ? "ready-for-draft" : "storyline");
   return { allApproved };
 }
 

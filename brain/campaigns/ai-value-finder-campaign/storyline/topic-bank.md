@@ -1,239 +1,196 @@
 ---
 campaign: "[[ai-value-finder-campaign]]"
-updatedAt: 2026-07-22T18:21:42.103Z
+updatedAt: 2026-07-23T11:52:14.587Z
 ---
 
 # Topic Bank
 
-**Spine:** AI ROI is not decided by which tools you buy — it is decided by which workflows you choose before you scale, and most enterprises are choosing blind.
-
-## Longform Article
-
-- **The 5% That Made AI Pay: What the 95% Got Wrong Before They Wrote the First Check** — Auditor · _available_
-  - The data story
-- **You Can't Govern What You Never Mapped: The Agentic Deployment Gap Fortune 500 Boards Are Missing** — Policy Insider · _available_
-  - The cautionary pattern
-- **From 30 Scattered Ideas to $50M Saved: Inside the 3-Day Roadmap That Killed the Failed Pilots** — Interviewer · _available_
-  - The outcome/case
-- **The Hidden 15-20x Bill: Why Choosing the Wrong Workflow Costs More Than Choosing the Wrong Model** — Ai For Humans · _available_
-  - How it actually works
+**Spine:** Enterprise AI fails on operations, not technology — the winners map AI to their own workflows before they spend, not after.
 
 ## Blog
 
-- **56% of CEOs Got Nothing From AI. The 12% Did One Thing Differently.** — Auditor · _available_
-  - The data story
-- **Pilot to Production in 2026: Why 79% Still Stall — and It Isn't the Technology** — Policy Insider · _available_
-  - The trend read
-- **53% of Your Software Licenses Are Unused. Your AI Budget Is Repeating the Mistake.** — Ai For Humans · _available_
+- **Why Externally-Built AI Tools Succeed Twice as Often as Internal Builds** — Auditor · _campaign_ · _in-production_
+  - The cautionary pattern
+- **Rented Intelligence: The Vendor Lock-In Risk Hiding in Your AI Stack** — Policy Insider · _thought-leadership_ · _in-production_
+  - The cautionary pattern
+- **Agentic AI, Explained: Why 76% of Companies Can't Actually Run the Agents They're Buying** — Ai For Humans · _thought-leadership_ · _available_
+  - How it actually works
+- **The AI Bill Tripled While Prices Dropped 98%: How to Find the ROI Before You Spend** — Doctor · _campaign_ · _available_
   - The practical play
-- **AI Reached Production in a Hospital — Because It Targeted One Workflow, Not Everything** — Doctor · _available_
-  - The outcome/case
 
 ## LinkedIn
 
-- **74% of AI's economic value went to 20% of companies. Here's what the concentration actually tells you.** — Auditor · _available_
+- **Three pilots failed. The technology wasn't wrong. The map was.** — Auditor · _campaign_ · _available_
   - The data story
-- **Microsoft just banned its own staff from a rival AI over data retention. Read that again.** — Feed · _available_
-  - The trend read
-- **Only 1 in 5 enterprises can govern the AI agents they're already deploying.** — Policy Insider · _available_
+- **Fortune 500s killed 42% of their AI projects last year. In 2024 it was 17%.** — Feed · _thought-leadership_ · _available_
+  - The data story
+- **80% of Fortune 500s run AI agents. 10% govern them. That gap is a board-level risk.** — Policy Insider · _thought-leadership_ · _available_
   - The cautionary pattern
-- **They had 30 AI ideas and several dead pilots. Three days later, they had five worth funding.** — Interviewer · _available_
+- **AI cut diagnostic errors 42%. The hospitals that saw nothing bought the same tools.** — Doctor · _campaign_ · _in-production_
   - The outcome/case
 
 ## Instagram
 
-- **$30-40B spent. 95% of pilots: zero P&L impact.** — Feed · _available_
+- **95% of enterprise AI pilots make zero money. Here's the one thing the 5% did differently.** — Feed · _thought-leadership_ · _available_
   - The data story
-- **The AI bill nobody budgets for: 80-90% of the cost comes AFTER you launch** — Ai For Humans · _available_
-  - How it actually works
-- **40+ rare diseases diagnosed. One hospital. One focused AI workflow.** — Doctor · _available_
+- **$50M saved a year. It started on the ops floor, not the boardroom.** — Auditor · _campaign_ · _available_
   - The outcome/case
-- **$80.6M of software you paid for. Never used. Your AI spend is next.** — Auditor · _available_
-  - The cautionary pattern
+- **Your AI bill tripled while prices dropped 98%. That's not a glitch.** — Ai For Humans · _thought-leadership_ · _in-production_
+  - The trend read
+- **18 diagnoses in cases everyone had given up on.** — Doctor · _thought-leadership_ · _in-production_
+  - The outcome/case
 
 ## Data
 
 ```json
 {
-  "spine": "AI ROI is not decided by which tools you buy — it is decided by which workflows you choose before you scale, and most enterprises are choosing blind.",
+  "spine": "Enterprise AI fails on operations, not technology — the winners map AI to their own workflows before they spend, not after.",
   "topics": [
     {
-      "id": "longform-hid2dc",
-      "channel": "longform",
+      "id": "blog-foru8h",
+      "channel": "blog",
+      "kind": "campaign",
       "personaId": "auditor-persona",
       "personaName": "Auditor",
-      "angle": "The data story",
-      "headline": "The 5% That Made AI Pay: What the 95% Got Wrong Before They Wrote the First Check",
-      "rationale": "Leads with the MIT finding that ~95% of $30-40B in GenAI pilots produced no P&L impact while 5% created significant value, and Arthur audits the structural reason: budget aimed at visible sales/marketing while back-office document review delivered $2-10M in savings. Ties directly to ValueFinder's premise of ranking projects by real ROI. Executive-forwardable, financial stakes in paragraph one, and the audit lens is brand-specific — a competitor can't publish this framing.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "angle": "The cautionary pattern",
+      "headline": "Why Externally-Built AI Tools Succeed Twice as Often as Internal Builds",
+      "rationale": "MIT data: externally-built tools succeed 2x internal builds. The villain is the internal-build trap; the shift is that the missing ingredient is operational mapping, not more engineers. ValueFinder enters as the outside-in roadmap built from the client's own ops floor. Passes gates: counterintuitive stat, buy-vs-build capital decision in paragraph one, brand methodology as the differentiator.",
+      "status": "in-production",
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "longform-p8uu7f",
-      "channel": "longform",
+      "id": "blog-zj845t",
+      "channel": "blog",
+      "kind": "thought-leadership",
       "personaId": "policy-insider",
       "personaName": "Policy Insider",
       "angle": "The cautionary pattern",
-      "headline": "You Can't Govern What You Never Mapped: The Agentic Deployment Gap Fortune 500 Boards Are Missing",
-      "rationale": "Uses the finding that only one in five companies has a mature governance model for autonomous agents, plus Coralogix's $200M raise and the Queen-Bee architecture, to argue governance failure begins at roadmap selection, not deployment. Positions ValueFinder as the map that makes governance possible. Policy Insider brings regulatory credibility no vendor can fake.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "headline": "Rented Intelligence: The Vendor Lock-In Risk Hiding in Your AI Stack",
+      "rationale": "Grounded in KPMG's 'rented intelligence' warning plus Microsoft internally restricting Claude Fable 5 over data-retention terms in June 2026. A POV on concentration and continuity risk from third-party models. Policy Insider dissects the governance angle; light closing note on building AI grounded in your own operational reality. Passes gates: named recent example, business-continuity stakes early, neutral-analyst POV.",
+      "status": "in-production",
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "longform-z4hp3f",
-      "channel": "longform",
-      "personaId": "interviewer-persona",
-      "personaName": "Interviewer",
-      "angle": "The outcome/case",
-      "headline": "From 30 Scattered Ideas to $50M Saved: Inside the 3-Day Roadmap That Killed the Failed Pilots",
-      "rationale": "Type 1 flagship built on the biotech proof point — 30+ scattered ideas and failed pilots filtered to 5 board-ready projects in 3 days, 3 deployed, $70M+ identified, $50M+ annual savings. Leads with the 11-day compliance handoff made autonomous, not the dollar figure. Interviewer format lets the operational change be told through the client's experience. Brand-specific by definition.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "longform-9s3p2x",
-      "channel": "longform",
+      "id": "blog-yao3a5",
+      "channel": "blog",
+      "kind": "thought-leadership",
       "personaId": "ai-for-humans",
       "personaName": "Ai For Humans",
       "angle": "How it actually works",
-      "headline": "The Hidden 15-20x Bill: Why Choosing the Wrong Workflow Costs More Than Choosing the Wrong Model",
-      "rationale": "Explains the inference economics — 80-90% of lifecycle compute dollars, a 15-20x multiplier, AI-first SaaS spending 40-50% of revenue on hosting, $7,500 per employee per month at aggressive adopters. Maya demystifies why ROI depends on workflow selection before committing to production-scale inference. CFO-relevant, forwardable, and the workflow-first frame is the ValueFinder POV.",
+      "headline": "Agentic AI, Explained: Why 76% of Companies Can't Actually Run the Agents They're Buying",
+      "rationale": "Demystifies the agentic shift for non-technical execs using the execution-gap data (85% want agentic in 3 years; only 11-17% in production; 76% admit ops can't support it). Maya Lin's translator voice makes it forwardable to a busy board. Light close on the infrastructure/readiness problem Techolution addresses. Passes gates: clarifying explainer, stark readiness gap up front, accessible POV competitors rarely nail.",
       "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "blog-p8rjg9",
+      "id": "blog-ktzsdd",
       "channel": "blog",
-      "personaId": "auditor-persona",
-      "personaName": "Auditor",
-      "angle": "The data story",
-      "headline": "56% of CEOs Got Nothing From AI. The 12% Did One Thing Differently.",
-      "rationale": "Anchored in PwC's 29th Global CEO Survey (4,454 CEOs): 12% got both cost and revenue benefits, 56% got neither. Arthur reads the number and connects it to process integration over tools. Financial consequence lands in the first paragraph; the sourced survey passes the evidence gate; brand angle is the roadmap-from-operational-reality thesis.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "blog-qlerpk",
-      "channel": "blog",
-      "personaId": "policy-insider",
-      "personaName": "Policy Insider",
-      "angle": "The trend read",
-      "headline": "Pilot to Production in 2026: Why 79% Still Stall — and It Isn't the Technology",
-      "rationale": "Uses the finding that 59% of companies spend over $1M annually on AI yet 79% face adoption challenges (a double-digit rise from 2025). Policy Insider reads the shift and reframes the stall as a selection-and-governance problem, not a tech problem. Positions ValueFinder as where production readiness actually starts.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "blog-xh60fw",
-      "channel": "blog",
-      "personaId": "ai-for-humans",
-      "personaName": "Ai For Humans",
+      "kind": "campaign",
+      "personaId": "doctor-persona",
+      "personaName": "Doctor",
       "angle": "The practical play",
-      "headline": "53% of Your Software Licenses Are Unused. Your AI Budget Is Repeating the Mistake.",
-      "rationale": "Grounded in the Zylo finding — 53% of SaaS licenses unused/underused, up to $80.6M wasted annually, IT controls only 15% of SaaS spend. Maya makes the practical case: without central usage oversight, AI spend becomes shelfware. ValueFinder as the operational-reality filter. Concrete waste figure in paragraph one.",
+      "headline": "The AI Bill Tripled While Prices Dropped 98%: How to Find the ROI Before You Spend",
+      "rationale": "Villain: ungoverned agent costs (bills up ~320% despite a 98% per-token price drop; budgets from $1.2M to $7M). The practical play is diagnosing ROI on the ops floor before scaling — the ValueFinder 3-day approach producing 3-5 ranked projects. Passes gates: hard cost figures, CFO stakes in paragraph one, brand's ranked-roadmap method as the answer.",
       "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "blog-z5dep5",
-      "channel": "blog",
-      "personaId": "doctor-persona",
-      "personaName": "Doctor",
-      "angle": "The outcome/case",
-      "headline": "AI Reached Production in a Hospital — Because It Targeted One Workflow, Not Everything",
-      "rationale": "Dr. Ava tells the Boston Children's Hospital case (40+ rare disease diagnoses with OpenAI tech, reduced operational burden) as proof that regulated environments reach production when AI targets a defined process. Her clinical credibility is unmatchable by a vendor. Ties to ValueFinder's ops-floor-first premise. Healthcare ICP relevance is immediate.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "linkedin-dgnfrw",
+      "id": "linkedin-cq4e3r",
       "channel": "linkedin",
+      "kind": "campaign",
       "personaId": "auditor-persona",
       "personaName": "Auditor",
       "angle": "The data story",
-      "headline": "74% of AI's economic value went to 20% of companies. Here's what the concentration actually tells you.",
-      "rationale": "Sharp single-stat post from PwC's AI Performance Study (1,217 executives, 25 sectors). Arthur reframes concentration as a selection story, not a scale story. One insight, quotable learning, forwardable to a board. Brand POV: value goes to those who redesign workflows, not those who buy more tools.",
+      "headline": "Three pilots failed. The technology wasn't wrong. The map was.",
+      "rationale": "Short, sharp LinkedIn post anchored on the biotech case — 30+ scattered ideas, failed pilots, filtered to 5 board-ready projects in 3 days, 3 deployed, $70M+ identified. Leads with the operational change (11-day compliance handoff made autonomous) not the dollar. Auditor's clipped forensic voice fits the feed. Passes gates: concrete outcome, stakes instant, proof only this brand has.",
       "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "linkedin-0817gy",
+      "id": "linkedin-n7nrvt",
       "channel": "linkedin",
+      "kind": "thought-leadership",
       "personaId": "feed-persona",
       "personaName": "Feed",
-      "angle": "The trend read",
-      "headline": "Microsoft just banned its own staff from a rival AI over data retention. Read that again.",
-      "rationale": "Ethan breaks the Verge report (Microsoft restricting Claude Fable 5 internally) as a fast take on how data governance is now a vendor-selection gate at the largest firms. Sharp, timely, names the company. Connects to why an operational-reality roadmap must weigh governance risk. Passes forward test with a genuine, recent development.",
+      "angle": "The data story",
+      "headline": "Fortune 500s killed 42% of their AI projects last year. In 2024 it was 17%.",
+      "rationale": "Ethan Nolan's fast-take voice on the abandonment spike (17%→42%) and the fact that only 25% of AI initiatives hit expected ROI. POV: abandonment is an operational-sequencing failure, not an AI failure. Ends with a one-line nod to workflow-first mapping. Passes gates: striking trend data, capital-waste stakes immediate, named POV competitors won't state as bluntly.",
       "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "linkedin-q41w2i",
+      "id": "linkedin-4tmfgg",
       "channel": "linkedin",
+      "kind": "thought-leadership",
       "personaId": "policy-insider",
       "personaName": "Policy Insider",
       "angle": "The cautionary pattern",
-      "headline": "Only 1 in 5 enterprises can govern the AI agents they're already deploying.",
-      "rationale": "Policy Insider's take on the agentic governance gap (arxiv finding), Coralogix's $1.6B valuation, and the loss-of-control taxonomy research. Reframes a problem executives think they understand — deployment speed — as a governance-before-deployment problem. ValueFinder as the map that precedes safe agentic rollout.",
+      "headline": "80% of Fortune 500s run AI agents. 10% govern them. That gap is a board-level risk.",
+      "rationale": "Gartner data on the governance vacuum. Policy Insider frames the exposure execs are ignoring. Light close: governance starts with knowing which workflows the agents touch. Passes gates: alarming ratio, board-risk stakes up front, governance POV from a credible non-vendor.",
       "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "linkedin-ejhsda",
+      "id": "linkedin-n5dqea",
       "channel": "linkedin",
-      "personaId": "interviewer-persona",
-      "personaName": "Interviewer",
-      "angle": "The outcome/case",
-      "headline": "They had 30 AI ideas and several dead pilots. Three days later, they had five worth funding.",
-      "rationale": "Compressed proof-point post on the biotech engagement — leading with the operational change (an 11-day compliance handoff made autonomous, a 4-person manual reconciliation replaced) framed as one of many engagements. Self-selecting CTA for teams ready to move past scattered pilots. Brand-specific, one clear learning.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "instagram-sez9hv",
-      "channel": "instagram",
-      "personaId": "feed-persona",
-      "personaName": "Feed",
-      "angle": "The data story",
-      "headline": "$30-40B spent. 95% of pilots: zero P&L impact.",
-      "rationale": "Bold visual stat card from the MIT finding. Ethan's fast, punchy register fits Instagram. Immediate stakes, one number, one takeaway — the 5% won on process integration, not model quality. Forwardable screenshot-grade insight tied to the workflow-selection spine.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "instagram-mip8df",
-      "channel": "instagram",
-      "personaId": "ai-for-humans",
-      "personaName": "Ai For Humans",
-      "angle": "How it actually works",
-      "headline": "The AI bill nobody budgets for: 80-90% of the cost comes AFTER you launch",
-      "rationale": "Maya explains the inference cost multiplier (15-20x, up from 33% of AI infra spend in 2023 to 55% in early 2026) in accessible visual form for busy execs. Reframes AI cost as a post-launch problem that workflow selection controls. Clear stakes, one idea per card.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
-    },
-    {
-      "id": "instagram-z82czl",
-      "channel": "instagram",
+      "kind": "campaign",
       "personaId": "doctor-persona",
       "personaName": "Doctor",
       "angle": "The outcome/case",
-      "headline": "40+ rare diseases diagnosed. One hospital. One focused AI workflow.",
-      "rationale": "Dr. Ava's Boston Children's Hospital case as a visual outcome story — AI reaching production in a regulated clinical setting by targeting a defined process. Human, credible, and ties to the operational-reality thesis. Healthcare ICP resonance, forwardable proof.",
-      "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "headline": "AI cut diagnostic errors 42%. The hospitals that saw nothing bought the same tools.",
+      "rationale": "Same tools, different results — because outcome came from workflow integration, not the model. Dr. Ava ties it to the enterprise lesson and to mapping AI onto real operations before deployment. Passes gates: outcome contrast, stakes clear, clinician credibility no competitor matches.",
+      "status": "in-production",
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     },
     {
-      "id": "instagram-7r1c8w",
+      "id": "instagram-fb194f",
       "channel": "instagram",
+      "kind": "thought-leadership",
+      "personaId": "feed-persona",
+      "personaName": "Feed",
+      "angle": "The data story",
+      "headline": "95% of enterprise AI pilots make zero money. Here's the one thing the 5% did differently.",
+      "rationale": "Punchy visual stat card. Ethan's fast-take reveal: the 5% anchored AI to operational workflows first. Ends with a subtle nod to workflow-first mapping. Passes gates: scroll-stopping stat, payoff instant, POV framed sharply.",
+      "status": "available",
+      "generatedAt": "2026-07-23T11:52:14.586Z"
+    },
+    {
+      "id": "instagram-vmy98r",
+      "channel": "instagram",
+      "kind": "campaign",
       "personaId": "auditor-persona",
       "personaName": "Auditor",
-      "angle": "The cautionary pattern",
-      "headline": "$80.6M of software you paid for. Never used. Your AI spend is next.",
-      "rationale": "Arthur's shelfware stat (53% of SaaS licenses unused, IT controls only 15% of spend) as a stark visual warning applied to AI budgets. One number, one consequence, one takeaway: no central oversight means wasted spend. Sets up ValueFinder as the filter without pitching.",
+      "angle": "The outcome/case",
+      "headline": "$50M saved a year. It started on the ops floor, not the boardroom.",
+      "rationale": "Clean visual on the biotech outcome, leading with the operational change (a 4-person manual reconciliation replaced) not just the number. Auditor's spare voice. Soft self-selecting close. Passes gates: concrete result, stakes visible, brand proof point unique.",
       "status": "available",
-      "generatedAt": "2026-07-22T18:21:42.103Z"
+      "generatedAt": "2026-07-23T11:52:14.586Z"
+    },
+    {
+      "id": "instagram-vspw4n",
+      "channel": "instagram",
+      "kind": "thought-leadership",
+      "personaId": "ai-for-humans",
+      "personaName": "Ai For Humans",
+      "angle": "The trend read",
+      "headline": "Your AI bill tripled while prices dropped 98%. That's not a glitch.",
+      "rationale": "Maya Lin explains the agentic-cost paradox simply for a scanning audience — more tokens, more cost per interaction. Light close on why finding ROI before scaling matters. Passes gates: counterintuitive hook, cost relevance immediate, plain-language POV.",
+      "status": "in-production",
+      "generatedAt": "2026-07-23T11:52:14.586Z"
+    },
+    {
+      "id": "instagram-ee1m4d",
+      "channel": "instagram",
+      "kind": "thought-leadership",
+      "personaId": "doctor-persona",
+      "personaName": "Doctor",
+      "angle": "The outcome/case",
+      "headline": "18 diagnoses in cases everyone had given up on.",
+      "rationale": "Emotive, credible visual story from the Boston Children's/Harvard/OpenAI result — showing AI value comes from anchoring to a real workflow. Dr. Ava's voice. Subtle close tying to operational grounding. Passes gates: memorable outcome, human stakes instant, POV only a clinician delivers.",
+      "status": "in-production",
+      "generatedAt": "2026-07-23T11:52:14.586Z"
     }
   ],
-  "updatedAt": "2026-07-22T18:21:42.103Z"
+  "updatedAt": "2026-07-23T11:52:14.587Z"
 }
 ```

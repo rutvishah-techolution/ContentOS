@@ -1,35 +1,32 @@
 ---
 campaign: "[[ai-value-finder-campaign]]"
-generatedAt: 2026-07-22T14:44:27.186Z
+generatedAt: 2026-07-23T11:50:49.343Z
 ---
 
 # Index of Sources Used
 
-## Campaign sources (16)
+## Campaign sources (20)
 
-- [Cost of Running an AI Product in 2026: GPU, API, and Inference Bills](https://valueaddvc.com/blog/the-true-cost-of-running-an-ai-product-in-2026-gpu-api-and-inference-bills)
-  - 2026-07-06 · web · used by Auditor · unique to this campaign
+- [AI Won’t Save Your Transformation](https://www.forrester.com/blogs/ai-wont-save-your-transformation/)
+  - 2026-07-18 · digest · used by Doctor · unique to this campaign
 
-- [Enterprise AI adoption in 2026: Why 79% face challenges despite high investment](https://www.marketscale.com/industries/software-and-technology/enterprise-ai-moves-from-pilot-to-production-in-2026-but-gaps-in-governance-and-talent-persist/)
-  - 2026-06-25 · web · used by Doctor · unique to this campaign
+- [AI Costs More Than The People It Replaced](https://www.forbes.com/sites/jemmagreen/2026/07/02/ai-costs-more-than-the-people-it-replaced/)
+  - 2026-07-02 · web · used by Auditor · unique to this campaign
 
-- [Shelfware Explained: The Hidden Cost in Your SaaS Stack](https://zylo.com/blog/shelfware)
-  - 2026-06-15 · web · used by Auditor · unique to this campaign
+- [How much does it cost to be AI-pilled?](https://ramp.com/data/ai-index-june-2026)
+  - 2026-06-26 · web · used by Auditor · reused in 1 other campaign(s)
 
-- [PRC-linked influence operations are targeting AI debates in the US](https://openai.com/index/prc-linked-influence-operations-ai-debates)
-  - 2026-06-11 · digest · used by Policy Insider · unique to this campaign
+- [Confidence Laundering in Agent Systems: Why Uncertainty Needs a Latent Carrier](https://arxiv.org/abs/2606.20662)
+  - 2026-06-24 · digest · used by Doctor · unique to this campaign
 
-- ['AI-pilled' firms spend $7,500 per employee each month on AI](https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/)
-  - 2026-06-10 · digest · used by Auditor · reused in 1 other campaign(s)
+- [The most AI-obsessed companies spend $7,500 per employee per month. The median spends $11.](https://thenextweb.com/news/ai-pilled-firms-7500-per-employee-spending)
+  - 2026-06-10 · web · used by Auditor · reused in 1 other campaign(s)
 
 - [Microsoft restricts Claude Fable for employees over data retention concerns](https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally)
-  - 2026-06-10 · digest · used by Doctor · unique to this campaign
+  - 2026-06-10 · digest · used by Policy Insider · unique to this campaign
 
 - [Queen-Bee Agents: Enterprise MCP Orchestration Architecture for Governed Multi-Agent Systems](https://arxiv.org/abs/2606.06545)
   - 2026-06-08 · digest · used by Policy Insider · unique to this campaign
-
-- [Travelers deploys AI-powered claims assistant countrywide with OpenAI](https://openai.com/index/travelers)
-  - 2026-06-03 · digest · used by Policy Insider · unique to this campaign
 
 - [Coralogix raises $200M on bet that someone needs to watch the AI agents](https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/)
   - 2026-06-03 · digest · used by Policy Insider · unique to this campaign
@@ -40,52 +37,67 @@ generatedAt: 2026-07-22T14:44:27.186Z
 - [Boston Children's Hospital uses AI to unlock new diagnoses for 40+ rare disease cases](https://openai.com/index/boston-childrens-hospital)
   - 2026-05-30 · digest · used by Doctor · unique to this campaign
 
-- [AI Inference Costs 2026: The Hidden 15-20x GPU Crisis](https://byteiota.com/ai-inference-costs-2026-the-hidden-15-20x-gpu-crisis/)
-  - 2026-02-02 · web · used by Auditor · unique to this campaign
+- [Rethinking organizational design in the age of agentic AI](https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/)
+  - 2026-05-26 · digest · used by Auditor · unique to this campaign
 
-- [MIT Report Finds Most AI Business Investments Fail, Reveals 'GenAI Divide'](https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide.aspx)
-  - 2025-08-19 · web · used by Auditor · unique to this campaign
+- [Microsoft reports AI is more expensive than paying human employees](https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/)
+  - 2026-05-22 · digest · used by Auditor · reused in 1 other campaign(s)
 
-- [PwC 2026 Global CEO Survey](https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html)
+- [AI radio station experiment demonstrates why AI can't be trusted to run businesses alone](https://www.theverge.com/ai-artificial-intelligence/931479/andon-labs-ai-radio-companies)
+  - 2026-05-15 · digest · used by Doctor · unique to this campaign
+
+- [The ROI of AI in Healthcare: What the Numbers Actually Show - Productive Edge](https://info.productiveedge.com/blog/the-roi-of-ai-in-healthcare-what-the-numbers-actually-show)
+  - 2026-03-30 · web · used by Doctor · unique to this campaign
+
+- [Understanding the Cost of AI in Healthcare for CFOs - Inferscience](https://www.inferscience.com/understanding-the-cost-of-ai-in-healthcare-for-cf-os)
+  - 2025-09-08 · web · used by Doctor · unique to this campaign
+
+- [MIT Report Finds 95% of AI Pilots Fail to Deliver ROI, Exposing "GenAI Divide"](https://www.legal.io/blog/5719519/MIT-Report-Finds-95-of-AI-Pilots-Fail-to-Deliver-ROI-Exposing-GenAI-Divide)
   - date unknown · web · used by Auditor · unique to this campaign
 
-- [MIT Report Finds 95% of AI Pilots Fail to Deliver ROI, Exposing 'GenAI Divide'](https://www.legal.io/blog/5719519/MIT-Report-Finds-95-of-AI-Pilots-Fail-to-Deliver-ROI-Exposing-GenAI-Divide)
+- [SaaS Spend Optimization: 2026 Complete Guide to Cost Savings](https://www.varisource.com/blog/saas-spend-optimization-guide)
   - date unknown · web · used by Auditor · unique to this campaign
 
-- [Three-quarters of AI's economic gains are being captured by just 20% of companies](https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html)
-  - date unknown · web · used by Auditor · unique to this campaign
+- [7 Secrets You Know About Fortune 500 Companies Using AI - Tezeract.ai](https://tezeract.ai/how-fortune-500-companies-using-ai/)
+  - date unknown · web · used by Doctor · unique to this campaign
+
+- [Gartner 2026 AI Governance Survey](https://www.gartner.com/en/documents/enterprise-ai-governance-2026)
+  - date unknown · web · used by Policy Insider · unique to this campaign
+
+- [Gartner Research: Agentic AI Project Outcomes 2026](https://www.gartner.com/en/documents/agentic-ai-data-readiness-2026)
+  - date unknown · web · used by Policy Insider · unique to this campaign
 
 ## Scout sources (10)
-
-- [Agentic AI Adoption Statistics for 2026 - First Page Sage](https://firstpagesage.com/reports/agentic-ai-adoption-statistics/)
-  - 2026-07-06 · web · used by Interviewer · unique to this campaign
 
 - [How Agentic AI Supercharges Startups and Threatens Incumbents](https://hbr.org/2026/07/how-agentic-ai-supercharges-startups-and-threatens-incumbents)
   - 2026-07-01 · digest · used by Interviewer · reused in 1 other campaign(s)
 
-- [NEA's Tiffany Luck: Enterprises Are Still Figuring Out AI ROI as 'Tokenmaxxing' Bills Come Due](https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/)
-  - 2026-06-17 · digest · used by Feed · reused in 1 other campaign(s)
+- [CEOs, CIOs clash over AI's value - CIO Dive](https://www.ciodive.com/news/ceos-cios-clash-ai-value/823823/)
+  - 2026-06-26 · web · used by Feed · unique to this campaign
 
-- [Renting intelligence is a risky way to run a business](https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=5)
-  - 2026-05-31 · digest · used by Feed · unique to this campaign
+- [AI Coding Agents Fail at Teamwork](https://hai.stanford.edu/news/ai-coding-agents-fail-at-teamwork)
+  - 2026-06-22 · digest · used by Interviewer · unique to this campaign
 
-- [Rethinking organizational design in the age of agentic AI](https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/)
-  - 2026-05-26 · digest · used by Feed · unique to this campaign
+- [AI Adoption Statistics: Business & Enterprise Data 2026 - AI Business Weekly](https://aibusinessweekly.net/p/ai-adoption-statistics)
+  - 2026-06-09 · web · used by Ai For Humans, Feed · unique to this campaign
 
-- [Microsoft reports AI is more expensive than paying human employees](https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/)
-  - 2026-05-22 · digest · used by Feed · reused in 1 other campaign(s)
+- [AI agent adoption set to surge 300% in two years; leaders weigh hybrid human-AI workforce](https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/)
+  - 2026-06-09 · digest · used by Interviewer · reused in 1 other campaign(s)
 
-- [AI ROI: Why Only 5% of Enterprises See Real Returns in 2026](https://masterofcode.com/blog/ai-roi)
-  - 2026-02-17 · web · used by Feed · unique to this campaign
+- [Renting intelligence is a risky way to run a business](https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=1)
+  - 2026-05-31 · digest · used by Interviewer · unique to this campaign
 
-- [AI Jobs Barometer - PwC](https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html)
+- [Organizations capture less than one-third of expected value from digital investments](https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering/)
+  - 2026-05-11 · digest · used by Interviewer · reused in 1 other campaign(s)
+
+- [OpenAI and PwC collaborate to reimagine the office of the CFO](https://openai.com/index/openai-pwc-finance-collaboration/)
+  - 2026-05-06 · digest · used by Ai For Humans · reused in 1 other campaign(s)
+
+- [The ROI Dilemma: How Fortune 500 Leaders are Measuring AI Value in 2026.](https://www.raisesummit.com/post/roi-dilemma-fortune-500-leaders-measuring-ai-value-2026)
   - date unknown · web · used by Feed · unique to this campaign
 
-- [AI and the C-Suite: Implications for CEO Strategy in 2026 - The Conference Board](https://www.conference-board.org/research/policy-backgrounders/ai-and-the-c-suite-implications-for-ceo-strategy-in-2026)
-  - date unknown · web · used by Interviewer · unique to this campaign
-
-- [AI Leadership Challenges - - Organizing4Innovation](https://www.organizing4innovation.com/ai-leadership-challenges/)
-  - date unknown · web · used by Interviewer · unique to this campaign
+- [The Biggest AI Adoption Challenges for 2026 - IBM](https://www.ibm.com/think/insights/ai-adoption-challenges)
+  - date unknown · web · used by Feed · unique to this campaign
 
 ## Data
 
@@ -93,49 +105,51 @@ generatedAt: 2026-07-22T14:44:27.186Z
 {
   "campaign": [
     {
-      "title": "Cost of Running an AI Product in 2026: GPU, API, and Inference Bills",
-      "url": "https://valueaddvc.com/blog/the-true-cost-of-running-an-ai-product-in-2026-gpu-api-and-inference-bills",
-      "origin": "web",
-      "personas": [
-        "Auditor"
-      ],
-      "publishedAt": "2026-07-06",
-      "reusedIn": []
-    },
-    {
-      "title": "Enterprise AI adoption in 2026: Why 79% face challenges despite high investment",
-      "url": "https://www.marketscale.com/industries/software-and-technology/enterprise-ai-moves-from-pilot-to-production-in-2026-but-gaps-in-governance-and-talent-persist/",
-      "origin": "web",
+      "title": "AI Won’t Save Your Transformation",
+      "url": "https://www.forrester.com/blogs/ai-wont-save-your-transformation/",
+      "origin": "digest",
       "personas": [
         "Doctor"
       ],
-      "publishedAt": "2026-06-25",
+      "publishedAt": "2026-07-18",
       "reusedIn": []
     },
     {
-      "title": "Shelfware Explained: The Hidden Cost in Your SaaS Stack",
-      "url": "https://zylo.com/blog/shelfware",
+      "title": "AI Costs More Than The People It Replaced",
+      "url": "https://www.forbes.com/sites/jemmagreen/2026/07/02/ai-costs-more-than-the-people-it-replaced/",
       "origin": "web",
       "personas": [
         "Auditor"
       ],
-      "publishedAt": "2026-06-15",
+      "publishedAt": "2026-07-02",
       "reusedIn": []
     },
     {
-      "title": "PRC-linked influence operations are targeting AI debates in the US",
-      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+      "title": "How much does it cost to be AI-pilled?",
+      "url": "https://ramp.com/data/ai-index-june-2026",
+      "origin": "web",
+      "personas": [
+        "Auditor"
+      ],
+      "publishedAt": "2026-06-26",
+      "reusedIn": [
+        "enterprise-ai-roi-and-workflow-automation-for-finance-teams"
+      ]
+    },
+    {
+      "title": "Confidence Laundering in Agent Systems: Why Uncertainty Needs a Latent Carrier",
+      "url": "https://arxiv.org/abs/2606.20662",
       "origin": "digest",
       "personas": [
-        "Policy Insider"
+        "Doctor"
       ],
-      "publishedAt": "2026-06-11",
+      "publishedAt": "2026-06-24",
       "reusedIn": []
     },
     {
-      "title": "'AI-pilled' firms spend $7,500 per employee each month on AI",
-      "url": "https://techcrunch.com/2026/06/10/ai-pilled-firms-spend-7500-per-employee-each-month-on-ai/",
-      "origin": "digest",
+      "title": "The most AI-obsessed companies spend $7,500 per employee per month. The median spends $11.",
+      "url": "https://thenextweb.com/news/ai-pilled-firms-7500-per-employee-spending",
+      "origin": "web",
       "personas": [
         "Auditor"
       ],
@@ -149,7 +163,7 @@ generatedAt: 2026-07-22T14:44:27.186Z
       "url": "https://www.theverge.com/report/947575/microsoft-claude-fable-5-restricted-internally",
       "origin": "digest",
       "personas": [
-        "Doctor"
+        "Policy Insider"
       ],
       "publishedAt": "2026-06-10",
       "reusedIn": []
@@ -162,16 +176,6 @@ generatedAt: 2026-07-22T14:44:27.186Z
         "Policy Insider"
       ],
       "publishedAt": "2026-06-08",
-      "reusedIn": []
-    },
-    {
-      "title": "Travelers deploys AI-powered claims assistant countrywide with OpenAI",
-      "url": "https://openai.com/index/travelers",
-      "origin": "digest",
-      "personas": [
-        "Policy Insider"
-      ],
-      "publishedAt": "2026-06-03",
       "reusedIn": []
     },
     {
@@ -205,36 +209,59 @@ generatedAt: 2026-07-22T14:44:27.186Z
       "reusedIn": []
     },
     {
-      "title": "AI Inference Costs 2026: The Hidden 15-20x GPU Crisis",
-      "url": "https://byteiota.com/ai-inference-costs-2026-the-hidden-15-20x-gpu-crisis/",
-      "origin": "web",
+      "title": "Rethinking organizational design in the age of agentic AI",
+      "url": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
+      "origin": "digest",
       "personas": [
         "Auditor"
       ],
-      "publishedAt": "2026-02-02",
+      "publishedAt": "2026-05-26",
       "reusedIn": []
     },
     {
-      "title": "MIT Report Finds Most AI Business Investments Fail, Reveals 'GenAI Divide'",
-      "url": "https://virtualizationreview.com/articles/2025/08/19/mit-report-finds-most-ai-business-investments-fail-reveals-genai-divide.aspx",
-      "origin": "web",
+      "title": "Microsoft reports AI is more expensive than paying human employees",
+      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+      "origin": "digest",
       "personas": [
         "Auditor"
       ],
-      "publishedAt": "2025-08-19",
+      "publishedAt": "2026-05-22",
+      "reusedIn": [
+        "enterprise-ai-roi-and-workflow-automation-for-finance-teams"
+      ]
+    },
+    {
+      "title": "AI radio station experiment demonstrates why AI can't be trusted to run businesses alone",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/931479/andon-labs-ai-radio-companies",
+      "origin": "digest",
+      "personas": [
+        "Doctor"
+      ],
+      "publishedAt": "2026-05-15",
       "reusedIn": []
     },
     {
-      "title": "PwC 2026 Global CEO Survey",
-      "url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-global-ceo-survey.html",
+      "title": "The ROI of AI in Healthcare: What the Numbers Actually Show - Productive Edge",
+      "url": "https://info.productiveedge.com/blog/the-roi-of-ai-in-healthcare-what-the-numbers-actually-show",
       "origin": "web",
       "personas": [
-        "Auditor"
+        "Doctor"
       ],
+      "publishedAt": "2026-03-30",
       "reusedIn": []
     },
     {
-      "title": "MIT Report Finds 95% of AI Pilots Fail to Deliver ROI, Exposing 'GenAI Divide'",
+      "title": "Understanding the Cost of AI in Healthcare for CFOs - Inferscience",
+      "url": "https://www.inferscience.com/understanding-the-cost-of-ai-in-healthcare-for-cf-os",
+      "origin": "web",
+      "personas": [
+        "Doctor"
+      ],
+      "publishedAt": "2025-09-08",
+      "reusedIn": []
+    },
+    {
+      "title": "MIT Report Finds 95% of AI Pilots Fail to Deliver ROI, Exposing \"GenAI Divide\"",
       "url": "https://www.legal.io/blog/5719519/MIT-Report-Finds-95-of-AI-Pilots-Fail-to-Deliver-ROI-Exposing-GenAI-Divide",
       "origin": "web",
       "personas": [
@@ -243,26 +270,43 @@ generatedAt: 2026-07-22T14:44:27.186Z
       "reusedIn": []
     },
     {
-      "title": "Three-quarters of AI's economic gains are being captured by just 20% of companies",
-      "url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html",
+      "title": "SaaS Spend Optimization: 2026 Complete Guide to Cost Savings",
+      "url": "https://www.varisource.com/blog/saas-spend-optimization-guide",
       "origin": "web",
       "personas": [
         "Auditor"
       ],
       "reusedIn": []
+    },
+    {
+      "title": "7 Secrets You Know About Fortune 500 Companies Using AI - Tezeract.ai",
+      "url": "https://tezeract.ai/how-fortune-500-companies-using-ai/",
+      "origin": "web",
+      "personas": [
+        "Doctor"
+      ],
+      "reusedIn": []
+    },
+    {
+      "title": "Gartner 2026 AI Governance Survey",
+      "url": "https://www.gartner.com/en/documents/enterprise-ai-governance-2026",
+      "origin": "web",
+      "personas": [
+        "Policy Insider"
+      ],
+      "reusedIn": []
+    },
+    {
+      "title": "Gartner Research: Agentic AI Project Outcomes 2026",
+      "url": "https://www.gartner.com/en/documents/agentic-ai-data-readiness-2026",
+      "origin": "web",
+      "personas": [
+        "Policy Insider"
+      ],
+      "reusedIn": []
     }
   ],
   "scout": [
-    {
-      "title": "Agentic AI Adoption Statistics for 2026 - First Page Sage",
-      "url": "https://firstpagesage.com/reports/agentic-ai-adoption-statistics/",
-      "origin": "web",
-      "personas": [
-        "Interviewer"
-      ],
-      "publishedAt": "2026-07-06",
-      "reusedIn": []
-    },
     {
       "title": "How Agentic AI Supercharges Startups and Threatens Incumbents",
       "url": "https://hbr.org/2026/07/how-agentic-ai-supercharges-startups-and-threatens-incumbents",
@@ -276,83 +320,97 @@ generatedAt: 2026-07-22T14:44:27.186Z
       ]
     },
     {
-      "title": "NEA's Tiffany Luck: Enterprises Are Still Figuring Out AI ROI as 'Tokenmaxxing' Bills Come Due",
-      "url": "https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/",
-      "origin": "digest",
+      "title": "CEOs, CIOs clash over AI's value - CIO Dive",
+      "url": "https://www.ciodive.com/news/ceos-cios-clash-ai-value/823823/",
+      "origin": "web",
       "personas": [
         "Feed"
       ],
-      "publishedAt": "2026-06-17",
+      "publishedAt": "2026-06-26",
+      "reusedIn": []
+    },
+    {
+      "title": "AI Coding Agents Fail at Teamwork",
+      "url": "https://hai.stanford.edu/news/ai-coding-agents-fail-at-teamwork",
+      "origin": "digest",
+      "personas": [
+        "Interviewer"
+      ],
+      "publishedAt": "2026-06-22",
+      "reusedIn": []
+    },
+    {
+      "title": "AI Adoption Statistics: Business & Enterprise Data 2026 - AI Business Weekly",
+      "url": "https://aibusinessweekly.net/p/ai-adoption-statistics",
+      "origin": "web",
+      "personas": [
+        "Ai For Humans",
+        "Feed"
+      ],
+      "publishedAt": "2026-06-09",
+      "reusedIn": []
+    },
+    {
+      "title": "AI agent adoption set to surge 300% in two years; leaders weigh hybrid human-AI workforce",
+      "url": "https://www.technologyreview.com/2026/06/09/1137830/learning-to-lead-in-a-hybrid-human-ai-enterprise/",
+      "origin": "digest",
+      "personas": [
+        "Interviewer"
+      ],
+      "publishedAt": "2026-06-09",
       "reusedIn": [
         "enterprise-ai-roi-and-workflow-automation-for-finance-teams"
       ]
     },
     {
       "title": "Renting intelligence is a risky way to run a business",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR3hYZzAydlBDUmRmS2poY0VobEdVZjNOcXA5ZmZOak5DVXZZS1RQZ21VWmdaaVVYX2xPLWVBQm1uT09tX3pKcTh6S3UwbFJmdTl5cld6LXlrbmlmd3d4ODB2Yl90SkFVSTkzS1ZYSmtJanpTREtnNGRobWctSXMyd0syRm5YeDF6dHFZakVYdHpjUEZwdUJGZERzaTdtVU0?oc=1",
       "origin": "digest",
       "personas": [
-        "Feed"
+        "Interviewer"
       ],
       "publishedAt": "2026-05-31",
       "reusedIn": []
     },
     {
-      "title": "Rethinking organizational design in the age of agentic AI",
-      "url": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
+      "title": "Organizations capture less than one-third of expected value from digital investments",
+      "url": "https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering/",
       "origin": "digest",
       "personas": [
-        "Feed"
+        "Interviewer"
       ],
-      "publishedAt": "2026-05-26",
-      "reusedIn": []
-    },
-    {
-      "title": "Microsoft reports AI is more expensive than paying human employees",
-      "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
-      "origin": "digest",
-      "personas": [
-        "Feed"
-      ],
-      "publishedAt": "2026-05-22",
+      "publishedAt": "2026-05-11",
       "reusedIn": [
         "enterprise-ai-roi-and-workflow-automation-for-finance-teams"
       ]
     },
     {
-      "title": "AI ROI: Why Only 5% of Enterprises See Real Returns in 2026",
-      "url": "https://masterofcode.com/blog/ai-roi",
+      "title": "OpenAI and PwC collaborate to reimagine the office of the CFO",
+      "url": "https://openai.com/index/openai-pwc-finance-collaboration/",
+      "origin": "digest",
+      "personas": [
+        "Ai For Humans"
+      ],
+      "publishedAt": "2026-05-06",
+      "reusedIn": [
+        "enterprise-ai-roi-and-workflow-automation-for-finance-teams"
+      ]
+    },
+    {
+      "title": "The ROI Dilemma: How Fortune 500 Leaders are Measuring AI Value in 2026.",
+      "url": "https://www.raisesummit.com/post/roi-dilemma-fortune-500-leaders-measuring-ai-value-2026",
       "origin": "web",
       "personas": [
         "Feed"
       ],
-      "publishedAt": "2026-02-17",
       "reusedIn": []
     },
     {
-      "title": "AI Jobs Barometer - PwC",
-      "url": "https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html",
+      "title": "The Biggest AI Adoption Challenges for 2026 - IBM",
+      "url": "https://www.ibm.com/think/insights/ai-adoption-challenges",
       "origin": "web",
       "personas": [
         "Feed"
-      ],
-      "reusedIn": []
-    },
-    {
-      "title": "AI and the C-Suite: Implications for CEO Strategy in 2026 - The Conference Board",
-      "url": "https://www.conference-board.org/research/policy-backgrounders/ai-and-the-c-suite-implications-for-ceo-strategy-in-2026",
-      "origin": "web",
-      "personas": [
-        "Interviewer"
-      ],
-      "reusedIn": []
-    },
-    {
-      "title": "AI Leadership Challenges - - Organizing4Innovation",
-      "url": "https://www.organizing4innovation.com/ai-leadership-challenges/",
-      "origin": "web",
-      "personas": [
-        "Interviewer"
       ],
       "reusedIn": []
     }

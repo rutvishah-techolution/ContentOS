@@ -1,8 +1,8 @@
 ---
 slug: ai-value-finder-campaign
 name: AI Value Finder Campaign
-createdAt: 2026-07-22T09:54:37.440Z
-status: drafting
+createdAt: 2026-07-23T11:48:18.934Z
+status: storyline
 ---
 
 # AI Value Finder Campaign
