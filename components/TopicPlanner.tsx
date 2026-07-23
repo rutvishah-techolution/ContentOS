@@ -145,7 +145,11 @@ export default function TopicPlanner({
               <div className="text-xs font-medium uppercase tracking-wide text-faint">
                 Campaign spine
               </div>
-              <div className="mt-1 text-sm text-fg">{bank.spine}</div>
+              <p className="mt-1 text-xs text-faint">
+                The single core message every topic below ties back to — drawn from
+                your brief and the approved research, so the campaign stays coherent.
+              </p>
+              <div className="mt-2 text-sm text-fg">{bank.spine}</div>
             </div>
           )}
           <h2 className="mb-1 text-sm font-medium text-fg">
