@@ -80,7 +80,7 @@ export default function CampaignsSection({
             return (
               <li
                 key={c.slug}
-                className="group flex items-center justify-between gap-3 px-5 py-4 transition hover:bg-surface-2"
+                className="group flex min-w-0 items-center justify-between gap-3 px-5 py-4 transition hover:bg-surface-2"
               >
                 <Link href={`/campaigns/${c.slug}`} className="flex min-w-0 flex-1 flex-col">
                   <span className="truncate text-[15px] font-medium text-fg">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
+import { listPersonas } from "@/lib/brain";
 
 export const metadata: Metadata = {
   title: "ContentOS",
@@ -8,26 +9,20 @@ export const metadata: Metadata = {
     "Autonomous research → storyline → drafting pipeline for B2B campaign content.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const personas = await listPersonas();
+
   return (
     <html lang="en">
       <body className="min-h-screen">
-        <nav className="sticky top-0 z-10 border-b border-border bg-bg/80 backdrop-blur">
-          <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="h-2.5 w-2.5 rounded-sm bg-fg" />
-              <span className="text-[15px] font-semibold tracking-tight">
-                ContentOS
-              </span>
-            </Link>
-            <span className="text-xs text-faint">Market Research · V1</span>
-          </div>
-        </nav>
-        {children}
+        <div className="flex min-h-screen">
+          <Sidebar personaCount={personas.length} />
+          <main className="min-w-0 flex-1">{children}</main>
+        </div>
       </body>
     </html>
   );
