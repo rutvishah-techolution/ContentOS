@@ -10,6 +10,9 @@ const AUTH_PAGES = ["/login", "/signup"];
 export const authConfig: NextAuthConfig = {
   pages: { signIn: "/login" },
   session: { strategy: "jwt" },
+  // trust whatever host the app is served on — localhost, a LAN IP, a tunnel
+  // (ngrok/cloudflared), or a deployed domain. No host is hardcoded.
+  trustHost: true,
   providers: [], // real providers are added in auth.ts (Node runtime)
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
