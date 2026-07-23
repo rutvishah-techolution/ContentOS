@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getCampaign } from "@/lib/brain";
+import { getCampaign, canAccessCampaign } from "@/lib/brain";
+import { auth } from "@/auth";
 import { readDrafts, STAGE_LABEL } from "@/lib/draft/draft";
 import { readStorylines } from "@/lib/storyline/storyline";
 import { readTopicBank } from "@/lib/storyline/topics";
@@ -15,13 +16,15 @@ export default async function CampaignWorkspace({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const [campaign, drafts, storylines, bank] = await Promise.all([
+  const [session, campaign, drafts, storylines, bank] = await Promise.all([
+    auth(),
     getCampaign(slug),
     readDrafts(slug),
     readStorylines(slug),
     readTopicBank(slug),
   ]);
   if (!campaign) notFound();
+  if (!canAccessCampaign(campaign, session?.user?.id)) notFound();
 
   const approved = drafts.filter((d) => d.approved);
   const inProgress = drafts.filter((d) => !d.approved);
