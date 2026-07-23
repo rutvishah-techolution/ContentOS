@@ -64,7 +64,7 @@ export default async function Home() {
       <div className="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {stats.map((s) => (
           <div key={s.key} className="card stat-card">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-muted">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface-2 text-fg">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor">
                 {ICONS[s.key]}
               </svg>
