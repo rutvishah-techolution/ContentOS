@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { signOut } from "next-auth/react";
 
 const NAV = [
   {
@@ -54,7 +55,13 @@ const NAV = [
   },
 ];
 
-export default function Sidebar({ personaCount }: { personaCount: number }) {
+export default function Sidebar({
+  personaCount,
+  userName,
+}: {
+  personaCount: number;
+  userName?: string;
+}) {
   const pathname = usePathname() || "/";
 
   return (
@@ -95,9 +102,25 @@ export default function Sidebar({ personaCount }: { personaCount: number }) {
         })}
       </nav>
 
-      <div className="px-5 py-4 text-xs text-faint">
-        <div>{personaCount} research personas</div>
-        <div className="mt-0.5">V1</div>
+      <div className="border-t border-border px-3 py-3">
+        {userName && (
+          <div className="flex items-center gap-2.5 px-2 py-1.5">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-surface-2 text-xs font-medium text-fg">
+              {userName.slice(0, 1).toUpperCase()}
+            </span>
+            <span className="min-w-0 flex-1 truncate text-sm text-fg">{userName}</span>
+            <button
+              onClick={() => signOut({ callbackUrl: "/login" })}
+              title="Log out"
+              className="shrink-0 text-xs text-faint hover:text-fg"
+            >
+              Log out
+            </button>
+          </div>
+        )}
+        <div className="px-2 pt-2 text-xs text-faint">
+          {personaCount} research personas · V1
+        </div>
       </div>
     </aside>
   );
