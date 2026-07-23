@@ -54,8 +54,8 @@ function num(v: unknown, d = 0): number {
   const n = Number(v);
   return Number.isFinite(n) ? Math.max(0, Math.min(100, n)) : d;
 }
-function linkedinRules(formats: string): string {
-  const m = formats.match(/##\s*LinkedIn post[\s\S]*?(?=\n##\s|$)/i);
+function carouselRules(formats: string): string {
+  const m = formats.match(/##\s*LinkedIn carousel[\s\S]*?(?=\n##\s|$)/i);
   return m ? m[0] : formats;
 }
 
@@ -195,10 +195,11 @@ Our angle: ${s.suggestedAngle}
 COMPANY KNOWLEDGE (extra facts you may use):
 ${knowledge || "(none)"}
 
-Write the LinkedIn post now — our POV on this news, in your voice. Output ONLY the post.`;
+Write the LinkedIn CAROUSEL now — our POV on this news, in your voice, as numbered
+slides (### Slide 1 … up to 8) plus the caption. Output ONLY the carousel.`;
   const written = (
     await callClaude({
-      system: draftSystem(voice, brand, linkedinRules(formats)),
+      system: draftSystem(voice, brand, carouselRules(formats)),
       user,
       maxTokens: 1400,
       webSearch: false,

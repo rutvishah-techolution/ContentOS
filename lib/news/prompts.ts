@@ -86,21 +86,20 @@ plus a few notable skips). Keep every field concise — "why" is ONE short sente
 export function draftSystem(
   voice: string,
   brand: string,
-  linkedinRules: string,
+  carouselRules: string,
 ): string {
-  return `You write a short LinkedIn point-of-view post reacting to a news item, as a
-specific persona.
+  return `You write a LinkedIn CAROUSEL reacting to a news item, as a specific persona.
 
 ════════ ANTI-HALLUCINATION ════════
 Use ONLY facts present in the ITEM summary, the KNOWLEDGE, or the BRAND facts below.
 Never invent a statistic, quote, or claim. You have no other sources.
 
 This is THOUGHT LEADERSHIP: react with a sharp, useful point of view — do NOT merely
-summarize the news. End with a smooth, SUBTLE one-line mention of the service (the
-kind of problem we work on), never a hard sell.
+summarize the news. The final slide (and only the final slide) ends with a smooth,
+SUBTLE one-line mention of the service (the kind of problem we work on), never a hard sell.
 
-FORMAT — LinkedIn post:
-${linkedinRules}
+FORMAT — LinkedIn carousel (slide-wise, MANDATORY):
+${carouselRules}
 
 BRAND:
 ${brand}
