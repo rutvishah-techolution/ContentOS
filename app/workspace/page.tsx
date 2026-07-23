@@ -25,7 +25,7 @@ export default async function WorkspacePage() {
           {campaigns.map((c) => (
             <li key={c.slug}>
               <Link
-                href={`/campaigns/${c.slug}/content`}
+                href={`/workspace/${c.slug}`}
                 className="card block h-full transition hover:border-border-strong"
               >
                 <span className="block truncate text-[15px] font-medium text-fg">

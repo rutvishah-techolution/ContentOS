@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -52,6 +53,7 @@ export default function DraftStudio({
   }
 
   const open = drafts.find((d) => d.id === openId) || null;
+  const approvedCount = drafts.filter((d) => d.approved).length;
   const allApproved = drafts.length > 0 && drafts.every((d) => d.approved);
 
   if (drafts.length === 0) {
@@ -75,11 +77,24 @@ export default function DraftStudio({
     <div className="flex flex-col gap-3">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium text-muted">Drafts ({drafts.length})</h2>
-        {allApproved && (
-          <span className="text-xs text-ok">✓ all copy approved — ready to ship</span>
-        )}
       </div>
       {error && <p className="alert-error">{error}</p>}
+
+      {approvedCount > 0 && (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border-strong bg-surface px-4 py-3 text-sm">
+          <span className="flex items-center gap-2">
+            <span className="text-ok">✓</span>
+            <span className="text-fg">
+              {approvedCount} approved
+              {allApproved ? " — campaign ready to ship" : ""}, saved to your
+              workspace.
+            </span>
+          </span>
+          <Link href={`/workspace/${slug}`} className="btn-primary">
+            Go to workspace →
+          </Link>
+        </div>
+      )}
       {drafts.map((d) => (
         <button
           key={d.id}
@@ -397,6 +412,11 @@ function DraftFullscreen({
               <button className="btn-primary" onClick={approve} disabled={busy !== null}>
                 {busy === "approve" ? "Approving…" : "Approve final ✓"}
               </button>
+            )}
+            {draft.approved && (
+              <Link href={`/workspace/${slug}`} className="btn-primary">
+                Go to workspace →
+              </Link>
             )}
           </div>
         </footer>
