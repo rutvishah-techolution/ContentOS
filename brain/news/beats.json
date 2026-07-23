@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Enterprise AI ROI & measurement",
+    "query": "enterprise AI ROI, measurable value, AI spend vs return, CFO",
+    "active": true,
+    "id": "enterprise-ai-roi-measurement"
+  },
+  {
+    "label": "AI governance, regulation & compliance",
+    "query": "AI regulation, governance, compliance, enterprise policy, EU/US AI rules",
+    "active": true,
+    "id": "ai-governance-regulation-compliance"
+  },
+  {
+    "label": "AI in finance & the CFO office",
+    "query": "AI in finance teams, CFO, financial operations automation",
+    "active": true,
+    "id": "ai-in-finance-the-cfo-office"
+  },
+  {
+    "label": "Enterprise automation & agentic AI",
+    "query": "enterprise automation, agentic AI, autonomous agents in production",
+    "active": true,
+    "id": "enterprise-automation-agentic-ai"
+  },
+  {
+    "label": "AI adoption, pilots & failures",
+    "query": "enterprise AI adoption, failed AI pilots, deployment lessons",
+    "active": true,
+    "id": "ai-adoption-pilots-failures"
+  }
+]

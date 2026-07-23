@@ -13,6 +13,23 @@ const NAV = [
     ),
   },
   {
+    href: "/news",
+    label: "News",
+    match: (p: string) => p.startsWith("/news"),
+    icon: (
+      <>
+        <path d="M3 5.5h7v7H3z" strokeWidth="1.4" strokeLinejoin="round" />
+        <path
+          d="M10 7h2.5A1.5 1.5 0 0 1 14 8.5v2.5a1.5 1.5 0 0 1-3 0V5"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="M4.5 7.5h4M4.5 9.5h4M4.5 11h2.5" strokeWidth="1.2" strokeLinecap="round" />
+      </>
+    ),
+  },
+  {
     href: "/workspace",
     label: "Workspace",
     match: (p: string) => p.startsWith("/workspace"),
