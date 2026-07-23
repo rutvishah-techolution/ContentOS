@@ -13,7 +13,7 @@ import {
 } from "@/lib/brain";
 import { callModel, normalizeModel } from "@/lib/models/router";
 import { syncDigest, DigestItem } from "@/lib/integrations/digest";
-import { fetchUrl } from "@/lib/research/fetchSource";
+import { fetchUrl, GROUNDING_REDIRECT_RE } from "@/lib/research/fetchSource";
 import { selectArticles } from "@/lib/research/selection";
 import { PersonaResearch } from "@/lib/research/types";
 import {
@@ -126,8 +126,6 @@ async function runOnePersona(
   }
 }
 
-const REDIRECT_RE = /vertexaisearch\.cloud\.google\.com\/grounding-api-redirect/i;
-
 /** Follows grounding-redirect URLs to their real publisher URL (done at
  *  generation time, before the short-lived redirects expire). */
 async function resolveRedirects(
@@ -135,12 +133,14 @@ async function resolveRedirects(
 ): Promise<void> {
   await Promise.all(
     findings.map(async (f) => {
-      if (!f.sourceUrl || !REDIRECT_RE.test(f.sourceUrl)) return;
+      if (!f.sourceUrl || !GROUNDING_REDIRECT_RE.test(f.sourceUrl)) return;
       try {
         const r = await fetchUrl(f.sourceUrl);
-        if (r.finalUrl && !REDIRECT_RE.test(r.finalUrl)) f.sourceUrl = r.finalUrl;
+        if (r.finalUrl && !GROUNDING_REDIRECT_RE.test(r.finalUrl)) {
+          f.sourceUrl = r.finalUrl;
+        }
       } catch {
-        /* keep the redirect; source-check will handle if it dies */
+        /* keep the redirect; source-check will strip it if it can't resolve */
       }
     }),
   );

@@ -153,7 +153,7 @@ Return ONLY JSON (no prose, no code fences):
   const raw = await callClaude({ system, user, maxTokens: 5000, webSearch: false });
   const parsed = safe(raw.match(/\{[\s\S]*\}/)?.[0] || "");
   const spine =
-    (parsed?.spine && String(parsed.spine)) ||
+    (parsed?.spine ? String(parsed.spine) : "") ||
     (await readTopicBank(slug))?.spine ||
     "(spine not generated)";
 

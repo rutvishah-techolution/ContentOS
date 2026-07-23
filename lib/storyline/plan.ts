@@ -134,11 +134,11 @@ function parsePlan(
   const nameById = new Map(roster.map((r) => [r.id, r.name]));
   const validChannel = new Set(channels);
 
-  const spine =
-    (parsed?.spine && String(parsed.spine)) || "(spine not generated)";
-  const rawItems = Array.isArray(parsed?.items) ? parsed.items : [];
+  const spine = parsed?.spine ? String(parsed.spine) : "(spine not generated)";
+  const rawItems: unknown[] = Array.isArray(parsed?.items) ? parsed.items : [];
   const items: PlanItem[] = rawItems
-    .map((it: Record<string, unknown>) => {
+    .map((raw) => {
+      const it = (raw ?? {}) as Record<string, unknown>;
       const channel = String(it.channel || "").toLowerCase() as Channel;
       const personaId = String(it.personaId || "");
       return {

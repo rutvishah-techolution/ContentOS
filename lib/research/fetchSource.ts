@@ -1,3 +1,12 @@
+/**
+ * Gemini/Vertex grounding cites sources as short-lived redirect URLs on this
+ * host, not the real publisher link. Following the redirect server-side turns
+ * it into the underlying source; one that WON'T follow (expired / bot-blocked)
+ * is a dead end and must never reach a reader.
+ */
+export const GROUNDING_REDIRECT_RE =
+  /vertexaisearch\.cloud\.google\.com\/grounding-api-redirect/i;
+
 export interface FetchResult {
   ok: boolean;
   status: number;
@@ -18,7 +27,7 @@ export interface FetchResult {
  */
 export async function fetchUrl(url: string): Promise<FetchResult> {
   if (!url || !/^https?:\/\//i.test(url)) {
-    return { ok: false, status: 0, finalUrl: url, snippet: "", error: "invalid or missing URL" };
+    return { ok: false, status: 0, finalUrl: url, snippet: "", dead: false, error: "invalid or missing URL" };
   }
   try {
     const controller = new AbortController();
@@ -35,6 +44,10 @@ export async function fetchUrl(url: string): Promise<FetchResult> {
     clearTimeout(timer);
 
     const finalUrl = res.url || url;
+    // If we're STILL on the grounding-redirect host, the redirect never
+    // resolved to a publisher (expired or blocked) — a link that will 404 for
+    // the reader. Treat it as dead so it's stripped, never shipped.
+    const unresolvedRedirect = GROUNDING_REDIRECT_RE.test(finalUrl);
     const ct = res.headers.get("content-type") || "";
     let snippet = "";
     let rawTitle: string | undefined;
@@ -49,9 +62,13 @@ export async function fetchUrl(url: string): Promise<FetchResult> {
       publishedAt = dateFromUrl(finalUrl);
     }
 
-    // Dead = hard 404/410, or a "soft 404" (200 but the title says not-found).
+    // Dead = hard 404/410, a "soft 404" (200 but the title says not-found),
+    // or an unresolved grounding redirect (a guaranteed future 404).
     const dead =
-      res.status === 404 || res.status === 410 || isNotFoundTitle(rawTitle);
+      res.status === 404 ||
+      res.status === 410 ||
+      isNotFoundTitle(rawTitle) ||
+      unresolvedRedirect;
     // Drop junk/blocked titles ("Just a moment…", "Access denied", 404 pages).
     const title = isJunkTitle(rawTitle) ? undefined : rawTitle;
 
@@ -66,12 +83,14 @@ export async function fetchUrl(url: string): Promise<FetchResult> {
     };
   } catch (e) {
     // Network/timeout error: unreachable, but NOT provably dead — keep it.
+    // Exception: an unreachable grounding redirect can never resolve to a real
+    // source, so fail closed and mark it dead rather than shipping a 404.
     return {
       ok: false,
       status: 0,
       finalUrl: url,
       snippet: "",
-      dead: false,
+      dead: GROUNDING_REDIRECT_RE.test(url),
       error: e instanceof Error ? e.message : String(e),
     };
   }
