@@ -1,10 +1,10 @@
-import { listKnowledge } from "@/lib/knowledge";
+import { listKnowledge, listFolders } from "@/lib/knowledge";
 import KnowledgeBase from "@/components/KnowledgeBase";
 
 export const dynamic = "force-dynamic";
 
 export default async function KnowledgePage() {
-  const docs = await listKnowledge();
+  const [docs, folders] = await Promise.all([listKnowledge(), listFolders()]);
 
   return (
     <div className="mx-auto max-w-3xl px-8 py-10">
@@ -13,11 +13,11 @@ export default async function KnowledgePage() {
           Knowledge base
         </h1>
         <p className="mt-1.5 text-[15px] text-muted">
-          Company docs, decks, and meeting transcripts. Stored in the Brain and
-          used to ground every campaign.
+          Company docs, decks, case studies, and past posts — organized in folders,
+          stored in the Brain, and used to ground every campaign.
         </p>
       </div>
-      <KnowledgeBase initialDocs={docs} />
+      <KnowledgeBase initialDocs={docs} initialFolders={folders} />
     </div>
   );
 }
