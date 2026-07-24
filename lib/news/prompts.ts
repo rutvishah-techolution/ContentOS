@@ -110,8 +110,13 @@ This is THOUGHT LEADERSHIP — a sharp point of view on the news, NOT a summary.
 - Middle slides: the insight, each backed by ONE specific fact from the article.
   One idea per slide. Show the consequence ("so what?"), not just a claim.
 - Second-to-last: the concrete takeaway the reader can act on.
-- Last slide (and only this one): a smooth, SUBTLE one-line tie to the service (the
-  kind of problem we work on) — never a hard sell.
+- CLOSING SLIDES (the last 1-2, e.g. slide 7-8): smoothly introduce the relevant
+  Techolution offering — default to **AI ValueFinder** — bridging naturally from the
+  insight ("this is exactly the gap AI ValueFinder closes for enterprises…"). Say in
+  one or two lines WHAT it does and HOW it solves the specific problem this post
+  raised. Benefit-focused and smooth — a natural next step, never a hard sell or a
+  feature dump. If the post is squarely about a different Techolution service in the
+  BRAND context, introduce that one instead.
 Executive voice, punchy, uneven rhythm. Every slide's last line earns the swipe.
 
 FORMAT — LinkedIn carousel (slide-wise, MANDATORY):
