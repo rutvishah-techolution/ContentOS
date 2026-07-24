@@ -9,6 +9,7 @@ import {
   setCampaignStatus,
   readPersonaBody,
 } from "@/lib/brain";
+import { getRulebook } from "@/lib/rulebook";
 import { getResearchBundle } from "@/lib/research/read";
 import { getKnowledgeContext } from "@/lib/knowledge";
 import { callClaude } from "@/lib/models/claude";
@@ -68,12 +69,14 @@ export async function generateStorylines(
   if (!campaignMd) throw new Error("No approved research base.");
   const spine = ""; // spine is in the topic bank; not needed per-piece here
 
-  const [structure, craft, brand, psych, knowledge] = await Promise.all([
+  const [structure, craft, brand, psych, knowledge, rulebook] = await Promise.all([
     readWriting("storyline-structure.md"),
     readWriting("craft-rules.md"),
     readWriting("brand-context.md"),
     readWriting("reader-psychology.md"),
     getKnowledgeContext(6000),
+    // storyline stage per the rulebook's activation map: 8, 3, 2, 5, 6 + cross-persona
+    getRulebook(["### 8", "### 3", "### 2", "### 5", "### 6", "## Cross-persona"]),
   ]);
   // thought-leadership pieces may draw on the broader scout research + knowledge
   const researchFor = (kind: PieceKind) =>
@@ -91,6 +94,9 @@ export async function generateStorylines(
       const system = `You write B2B campaign content as a specific persona.
 
 ${GROUNDING}
+
+════════ PERSONA RULEBOOK (read first, then apply to YOUR VOICE below) ════════
+${rulebook}
 
 ════════ STORYLINE STRUCTURE ════════
 ${structure}
@@ -162,15 +168,19 @@ export async function reviseStoryline(
   const personas = await listPersonas();
   const pPath = personas.find((p) => p.id === doc.personaId)?.path;
   const voice = pPath ? await readPersonaBody(pPath) : "";
-  const [structure, craft, brand] = await Promise.all([
+  const [structure, craft, brand, rulebook] = await Promise.all([
     readWriting("storyline-structure.md"),
     readWriting("craft-rules.md"),
     readWriting("brand-context.md"),
+    getRulebook(["### 8", "### 4", "### 3", "## Cross-persona"]),
   ]);
 
   const system = `You are revising an existing storyline with the reviewer, in a conversation. Apply their guidance while keeping it grounded, in voice, and true to the structure.
 
 ${GROUNDING}
+
+════════ PERSONA RULEBOOK (apply to YOUR VOICE below) ════════
+${rulebook}
 
 STORYLINE STRUCTURE:
 ${structure}

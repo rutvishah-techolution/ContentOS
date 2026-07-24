@@ -32,3 +32,6 @@ brain/auth/
 brain/campaigns/
 brain/news/
 diagrams/
+brain/system/agents-flowchart.md
+brain/knowledge/
+tsconfig.tsbuildinfo

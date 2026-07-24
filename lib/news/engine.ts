@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { WRITING_DIR, listPersonas, readPersonaBody } from "@/lib/brain";
 import { getKnowledgeContext } from "@/lib/knowledge";
+import { getRulebook } from "@/lib/rulebook";
 import { groundedRaw } from "@/lib/models/gemini";
 import { callClaude } from "@/lib/models/claude";
 import { fetchUrl } from "@/lib/research/fetchSource";
@@ -181,11 +182,13 @@ export async function draftSignal(
 ): Promise<Signal> {
   const s = await readSignal(id);
   if (!s) throw new Error("Signal not found.");
-  const [brand, formats, humanizer, knowledge] = await Promise.all([
+  const [brand, formats, humanizer, knowledge, rulebook] = await Promise.all([
     readWriting("brand-context.md"),
     readWriting("format-rules.md"),
     readWriting("humanizer.md"),
     getKnowledgeContext(5000),
+    // news writer per the rulebook's activation map: 4, 5, 3, 2 + cross-persona
+    getRulebook(["### 4", "### 5", "### 3", "### 2", "## Cross-persona"]),
   ]);
   const personas = await listPersonas();
   // let the caller pick who writes it (any persona)
@@ -225,7 +228,7 @@ Write the LinkedIn CAROUSEL now — our sharp POV on this news, in your voice, a
 numbered slides (### Slide 1 … up to 8) plus a one-line caption. Output ONLY the carousel.`;
   const written = (
     await callClaude({
-      system: draftSystem(voice, brand, carouselRules(formats)),
+      system: draftSystem(voice, brand, carouselRules(formats), rulebook),
       user,
       maxTokens: 1400,
       webSearch: false,

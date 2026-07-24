@@ -124,7 +124,8 @@
     "campaigns": [
       "enterprise-ai-roi-and-workflow-automation-for-finance-teams",
       "ai-value-finder-campaign",
-      "ai-value-finder-campaign-2"
+      "ai-value-finder-campaign-2",
+      "ai-value-finder"
     ],
     "publishedAt": "2026-06-10"
   },
@@ -306,7 +307,8 @@
     "title": "MIT report: 95% of generative AI pilots at companies are failing | Fortune",
     "url": "https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/",
     "campaigns": [
-      "ai-value-finder-campaign"
+      "ai-value-finder-campaign",
+      "ai-value-finder"
     ],
     "publishedAt": "2025-08-18"
   },
@@ -361,7 +363,8 @@
     "title": "Rethinking organizational design in the age of agentic AI",
     "url": "https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/",
     "campaigns": [
-      "ai-value-finder-campaign"
+      "ai-value-finder-campaign",
+      "ai-value-finder"
     ],
     "publishedAt": "2026-05-26"
   },
@@ -483,7 +486,8 @@
     "title": "Enterprise AI Spend Scrutiny 2026: CFO Review, ROI Falls Short",
     "url": "https://aibusinessweekly.net/p/enterprise-ai-spending-cfo-scrutiny-roi-2026",
     "campaigns": [
-      "enterprise-ai-roi-and-workflow-automation-for-finance-teams"
+      "enterprise-ai-roi-and-workflow-automation-for-finance-teams",
+      "ai-value-finder"
     ],
     "publishedAt": "2026-06-07"
   },
@@ -508,7 +512,8 @@
     "url": "https://finance.yahoo.com/news/mit-report-95-generative-ai-105412686.html",
     "campaigns": [
       "enterprise-ai-roi-and-workflow-automation-for-finance-teams",
-      "ai-value-finder-campaign-2"
+      "ai-value-finder-campaign-2",
+      "ai-value-finder"
     ],
     "publishedAt": "2025-08-18"
   },
@@ -676,7 +681,8 @@
     "title": "MIT Report Finds 95% of AI Pilots Fail to Deliver ROI, Exposing \"GenAI Divide\"",
     "url": "https://www.legal.io/blog/5719519/MIT-Report-Finds-95-of-AI-Pilots-Fail-to-Deliver-ROI-Exposing-GenAI-Divide",
     "campaigns": [
-      "ai-value-finder-campaign"
+      "ai-value-finder-campaign",
+      "ai-value-finder"
     ]
   },
   "aibusinessweekly.com/ai-adoption-statistics-business-enterprise-data-2026": {
@@ -767,7 +773,8 @@
     "title": "CFOs' AI Investment Priorities 2026: Shifting Budgets from Testing to Production Scale",
     "url": "https://chatfin.ai/blog/cfos-ai-investment-priorities-2026-shifting-budgets-from-testing-to-production-scale/",
     "campaigns": [
-      "ai-value-finder-campaign"
+      "ai-value-finder-campaign",
+      "ai-value-finder"
     ]
   },
   "agility-at-scale.com/ai/strategy/roi-and-success-metrics": {
@@ -893,7 +900,8 @@
     "url": "https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/",
     "campaigns": [
       "ai-value-finder-campaign",
-      "ai-value-finder-campaign-2"
+      "ai-value-finder-campaign-2",
+      "ai-value-finder"
     ],
     "publishedAt": "2026-06-03"
   },
@@ -901,7 +909,8 @@
     "title": "Boston Children's Hospital uses AI to unlock new diagnoses for 40+ rare disease cases",
     "url": "https://openai.com/index/boston-childrens-hospital",
     "campaigns": [
-      "ai-value-finder-campaign"
+      "ai-value-finder-campaign",
+      "ai-value-finder"
     ],
     "publishedAt": "2026-05-30"
   },
@@ -1060,7 +1069,8 @@
     "title": "The Biggest AI Adoption Challenges for 2026 - IBM",
     "url": "https://www.ibm.com/think/insights/ai-adoption-challenges",
     "campaigns": [
-      "ai-value-finder-campaign"
+      "ai-value-finder-campaign",
+      "ai-value-finder"
     ]
   },
   "tygartmedia.com/microsoft-copilot-license-optimization-unused-seats-2026": {
@@ -1134,6 +1144,268 @@
     "url": "https://chatfin.ai/cfo-ai-strategy-2026-investment-trends-moving-toward-production-deployment/",
     "campaigns": [
       "ai-value-finder-campaign-2"
+    ]
+  },
+  "corporatefinanceinstitute.com/resources/artificial-intelligence-ai/ai-agents-for-month-end-close-automation": {
+    "title": "AI Agents for Month-End Close Automation: Use Cases, Benefits, and Control Considerations",
+    "url": "https://corporatefinanceinstitute.com/resources/artificial-intelligence-ai/ai-agents-for-month-end-close-automation/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-07-01"
+  },
+  "cloudzero.com/finance-needs-ai-roi-2026-survey-report": {
+    "title": "Finding the ROI of AI: The Finance Perspective",
+    "url": "https://www.cloudzero.com/finance-needs-ai-roi-2026-survey-report/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-06-24"
+  },
+  "news.google.com/rss/articles/cbmiigfbvv95cuxoouotwguxtvrnmtatbwplvtlmme5qudbjuwrqr0dlynblzhltdtlzz0eztne0c2rsrk1qtfazqzexqwq3akfjee1iclljvtfhshq0djk0atfxre5jdwfccunfdtgznndpmutxqzy5nkzxuthdn1nedhjkofbyuknrltrlyzhzvfi4wwc": {
+    "title": "The Next Enterprise AI Challenge Is Agent Sprawl",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOUotWGUxTVRnMTAtbWpLVTlmME5QUDBjUWRqR0dLYnBlZHltdTlzZ0EzTnE0c2RsRk1QTFAzQzExQWQ3akFjeE1IclljVTFHSHQ0djk0aTFxRE5jdWFCcUNFdTgzNndpMUtxQzY5NkZXUThDN1NEdHJKOFByUkNrLTRlYzhZVFI4WWc?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-06-22"
+  },
+  "hbr.org/2026/06/how-to-design-agentic-systems-around-the-implicit-rules-that-govern-your-company": {
+    "title": "How to Design Agentic Systems Around the Implicit Rules that Govern Your Company",
+    "url": "https://hbr.org/2026/06/how-to-design-agentic-systems-around-the-implicit-rules-that-govern-your-company",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-06-19"
+  },
+  "aiassemblylines.com/post/ai-roi-benchmarks-by-industry-2026-enterprise": {
+    "title": "What Are AI ROI Benchmarks by Industry? A 2026 Reference for Enterprise Leaders",
+    "url": "https://aiassemblylines.com/post/ai-roi-benchmarks-by-industry-2026-enterprise",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-06-09"
+  },
+  "bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs": {
+    "title": "Uber Caps Employee Spending on AI Tools Like Claude Code to Manage Costs",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-02/uber-caps-usage-of-ai-tools-like-claude-code-to-cut-costs",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-06-02"
+  },
+  "vaasblock.com/news/corporate-ai-spending-roi-enterprise-reckoning-2026": {
+    "title": "Enterprise AI Spending ROI Crisis 2026: $2.59 Trillion and One $500M Bill",
+    "url": "https://www.vaasblock.com/news/corporate-ai-spending-roi-enterprise-reckoning-2026/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-05-29"
+  },
+  "digitalapplied.com/blog/ai-roi-measurement-framework-2026-cfo-payback-models": {
+    "title": "AI ROI Measurement Framework: 7 CFO-Grade Models 2026",
+    "url": "https://www.digitalapplied.com/blog/ai-roi-measurement-framework-2026-cfo-payback-models",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-05-27"
+  },
+  "opensourceforu.com/2026/05/enterprise-ai-costs-crash-67-as-open-source-models-and-multi-model-routing-go-mainstream": {
+    "title": "Enterprise AI Costs Crash 67% As Open Source Models And Multi-Model Routing Go Mainstream",
+    "url": "https://www.opensourceforu.com/2026/05/enterprise-ai-costs-crash-67-as-open-source-models-and-multi-model-routing-go-mainstream/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-05-11"
+  },
+  "hbr.org/2026/05/what-are-your-companys-ai-nightmares": {
+    "title": "What are your company's AI nightmares?",
+    "url": "https://hbr.org/2026/05/what-are-your-companys-ai-nightmares",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-05-11"
+  },
+  "emorphis.health/blogs/cost-of-implementing-ai-in-healthcare": {
+    "title": "Cost of Implementing AI in Healthcare, A Complete Guide to ROI Calculations and Budget Planning - Emorphis Health",
+    "url": "https://emorphis.health/blogs/cost-of-implementing-ai-in-healthcare/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-04-09"
+  },
+  "bu.edu/questrom/blog/moving-beyond-ai-pilots-what-organizations-get-wrong": {
+    "title": "Moving Beyond AI Pilots: What Organizations Get Wrong",
+    "url": "https://www.bu.edu/questrom/blog/moving-beyond-ai-pilots-what-organizations-get-wrong/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-04-02"
+  },
+  "bprglobal.co/resources/accounting-bookkeeping/month-end-close-automation": {
+    "title": "Month-End Close Automation: Proven Guide Cut Time 50% [2026]",
+    "url": "https://bprglobal.co/resources/accounting-bookkeeping/month-end-close-automation/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-03-05"
+  },
+  "speakwiseapp.com/blog/productivity-loss-statistics": {
+    "title": "Productivity Loss Statistics 2026: Hidden Drains, Time Leaks, and Output Gaps",
+    "url": "https://speakwiseapp.com/blog/productivity-loss-statistics",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-03-05"
+  },
+  "pertamapartners.com/insights/ai-project-failure-statistics-2026": {
+    "title": "AI Project Failure Rate 2026: 80% Fail | Pertama Partners",
+    "url": "https://www.pertamapartners.com/insights/ai-project-failure-statistics-2026",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-02-08"
+  },
+  "cfo.com/news/companies-expect-to-double-their-ai-spending-in-2026/809843": {
+    "title": "Companies expect to double their AI spending in 2026",
+    "url": "https://www.cfo.com/news/companies-expect-to-double-their-ai-spending-in-2026/809843/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-01-20"
+  },
+  "forbes.com/sites/andreahill/2025/08/21/why-95-of-ai-pilots-fail-and-what-business-leaders-should-do-instead": {
+    "title": "Why 95% Of AI Pilots Fail, And What Business Leaders Should Do Instead",
+    "url": "https://www.forbes.com/sites/andreahill/2025/08/21/why-95-of-ai-pilots-fail-and-what-business-leaders-should-do-instead/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2025-08-21"
+  },
+  "gloriumtech.com/ai-reducing-healthcare-costs": {
+    "title": "How Does AI Reduce Costs in Healthcare: Facts from 7 Startups - Glorium Technologies",
+    "url": "https://gloriumtech.com/ai-reducing-healthcare-costs/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2023-08-21"
+  },
+  "speediyo.com/stranded-compute/enterprise-ai-roi-disappointing": {
+    "title": "Why Enterprise AI Fails to Deliver ROI: Disappointing Returns, Not Delivering Expected Results",
+    "url": "https://www.speediyo.com/stranded-compute/enterprise-ai-roi-disappointing",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "vertexaisearch.cloud.google.google.com/grounding-api-redirect/auziyqgwtxlluhcalcmvl3yfkqeti2pjdiohq0rsvrzx98xdfx2uyiglub5sfuw6t-_clgan-ae63fbdrpexhgdtb849fddibupqnetyu1oyeuqn_xah2duww82gxz9ldm7oci5zn63kapnj0rj_blvcw-cwgyws9cmhqxaz43tlkvlse7d-tt0qu9s0_w-mmiql14olbb4pjc5ranl-ben7anxnid4hvqelng==": {
+    "title": "Hospital Trends in the Use, Evaluation, and Governance of Predictive AI, 2023-2024 - ONC Health IT Research & Analysis - HealthIT.gov",
+    "url": "https://vertexaisearch.cloud.google.google.com/grounding-api-redirect/AUZIYQGWtXLluhCalcmVl3yFKQeTi2PjdiOHq0rSvrzx98xdFx2uyigLUB5sFUW6t-_cLGan-ae63FbDrPexHGDTB849FddIBUpQNeTyU1oyEuQN_xAh2Duww82gxz9Ldm7OCI5Zn63kApnj0RJ_bLvcW-CWgyWs9cMhqxaz43TLkVlSE7D-TT0Qu9S0_w-mMIqL14olBb4pJc5RAnL-BEn7ANXNid4hVqElng==",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "appinventiv.com/blog/ai-in-healthcare-administration": {
+    "title": "AI in Healthcare Administration: Reduce Workload by 40% - Appinventiv",
+    "url": "https://appinventiv.com/blog/ai-in-healthcare-administration/",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "alicelabs.ai/en/insights/ai-implementation-case-studies": {
+    "title": "AI Implementation Case Studies: Real Enterprise Results 2026",
+    "url": "https://alicelabs.ai/en/insights/ai-implementation-case-studies",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "everworker.ai": {
+    "title": "Why the MIT Report Missed The Point Entirely",
+    "url": "https://everworker.ai/",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "evanta.com/resources/cfo/survey-report/top-3-priorities-for-cfos-in-2026": {
+    "title": "Discover the top 3 priorities reported by CFOs in Gartner C-level Communities' 2026 Leadership Perspective Survey",
+    "url": "https://www.evanta.com/resources/cfo/survey-report/top-3-priorities-for-cfos-in-2026",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "gartner.com/en/newsroom/press-releases/2026-02-10-gartner-research-reveals-cfos-budget-plans-prioritize-grotwth-functions-tech-and-ai-in-2026": {
+    "title": "Gartner Survey Shows CFO Budget Plans Put Growth, Tech & AI Priority",
+    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-02-10-gartner-research-reveals-cfos-budget-plans-prioritize-grotwth-functions-tech-and-ai-in-2026",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "esgdive.com/news/92-cfos-top-finance-staff-pressure-show-roi-ai-avalara/826030": {
+    "title": "92% of CFOs, top finance staff feel pressure to show ROI from AI: survey | ESG Dive",
+    "url": "https://www.esgdive.com/news/92-cfos-top-finance-staff-pressure-show-roi-ai-avalara/826030/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-07-23"
+  },
+  "cfo.com/news/ais-top-value-for-finance-now-lies-in-improving-judgment-not-efficiency/825326": {
+    "title": "AI's top value for finance now lies in improving judgment, not efficiency | CFO.com",
+    "url": "https://www.cfo.com/news/ais-top-value-for-finance-now-lies-in-improving-judgment-not-efficiency/825326/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-07-16"
+  },
+  "aimagicx.com/blog/ai-roi-measurement-enterprise-framework-2026": {
+    "title": "AI ROI Reckoning: Why 95% of Enterprises Still Can't Measure Returns (And How to Fix It)",
+    "url": "https://www.aimagicx.com/blog/ai-roi-measurement-enterprise-framework-2026",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-04-08"
+  },
+  "prnewswire.com/news-releases/new-research-reveals-cfos-evolving-into-strategic-architects-amid-ai-transformation-302734859.html": {
+    "title": "New Research Reveals CFOs Evolving into Strategic Architects Amid AI Transformation",
+    "url": "https://www.prnewswire.com/news-releases/new-research-reveals-cfos-evolving-into-strategic-architects-amid-ai-transformation-302734859.html",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-04-07"
+  },
+  "rivuletiq.com/ai-agents-transforming-business-operations-2026": {
+    "title": "How AI Agents Are Transforming Business Operations in 2026 - Rivulet IQ",
+    "url": "https://www.rivuletiq.com/ai-agents-transforming-business-operations-2026/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2026-02-02"
+  },
+  "forrester.com/blogs/predictions-2026-ai-agents-changing-business-models-and-workplace-culture-impact-enterprise-software": {
+    "title": "Predictions 2026: AI Agents, Changing Business Models, And Workplace Culture Impact Enterprise Software - Forrester",
+    "url": "https://www.forrester.com/blogs/predictions-2026-ai-agents-changing-business-models-and-workplace-culture-impact-enterprise-software/",
+    "campaigns": [
+      "ai-value-finder"
+    ],
+    "publishedAt": "2025-11-05"
+  },
+  "iea.org/reports/energy-and-ai/energy-demand-from-ai": {
+    "title": "Energy demand from AI - IEA",
+    "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "simplyai.gr/blog/ai-automation-reshaping-enterprise-2026": {
+    "title": "AI Automation Reshaping Enterprise Operations in 2026",
+    "url": "https://simplyai.gr/blog/ai-automation-reshaping-enterprise-2026",
+    "campaigns": [
+      "ai-value-finder"
+    ]
+  },
+  "business.adobe.com/blog/ai-search-behavior-customer-journey-how-to-increase-brand-visibility": {
+    "title": "AI Search Behavior and Brand Visibility in Customer Journeys - Adobe for Business",
+    "url": "https://business.adobe.com/blog/ai-search-behavior-customer-journey-how-to-increase-brand-visibility",
+    "campaigns": [
+      "ai-value-finder"
     ]
   }
 }

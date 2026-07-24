@@ -11,6 +11,7 @@ import {
 } from "@/lib/brain";
 import { getResearchBundle } from "@/lib/research/read";
 import { getKnowledgeContext } from "@/lib/knowledge";
+import { getRulebook } from "@/lib/rulebook";
 import { callClaude } from "@/lib/models/claude";
 import { callGemini } from "@/lib/models/gemini";
 import { readStorylines } from "@/lib/storyline/storyline";
@@ -107,6 +108,9 @@ ${GROUNDING}
 
 ${SOURCE_BALANCE}
 
+════════ PERSONA RULEBOOK (read first, then apply to YOUR VOICE below) ════════
+${fw.rulebook || ""}
+
 ${intentGuidance(sl.kind)}
 
 STORYLINE STRUCTURE:
@@ -157,6 +161,9 @@ ${fw.craft}
 
 ${fw.psych}
 
+════════ KEEP THE PERSONA'S VOICE (do not flatten it) ════════
+${fw.rulebook || ""}
+
 Output ONLY the edited piece as Markdown.`;
   return (
     await callClaude({
@@ -172,7 +179,12 @@ async function humanizePass(
   content: string,
   fw: Record<string, string>,
 ): Promise<string> {
-  const system = `${fw.humanizer}\n\nEdit only. Do not add new facts. Keep the persona's voice. Output ONLY the final piece as Markdown.`;
+  const system = `${fw.humanizer}
+
+════════ PRESERVE THE PERSONA (humanizer note) ════════
+${fw.rulebook || ""}
+
+Edit only. Do not add new facts. Keep the persona's voice. Output ONLY the final piece as Markdown.`;
   return (
     await callClaude({
       system,
@@ -222,6 +234,7 @@ export async function generateDrafts(
     structure: await readWriting("storyline-structure.md"),
     formats: await readWriting("format-rules.md"),
     brand,
+    rulebook: await getRulebook("all"), // Draft 1 = full persona activation
   };
   const personas = await listPersonas();
   const pathById = new Map(personas.map((p) => [p.id, p.path]));
@@ -277,6 +290,11 @@ export async function advanceDraft(slug: string, id: string): Promise<DraftDoc> 
     craft: await readWriting("craft-rules.md"),
     psych: await readWriting("reader-psychology.md"),
     humanizer: await readWriting("humanizer.md"),
+    rulebook: await getRulebook(
+      next === "draft2"
+        ? ["### 4", "## Cross-persona"] // editor: voice/vocab consistency
+        : ["## A note on the humanizer", "### 4", "### 5"], // humanizer note
+    ),
   };
 
   const content =

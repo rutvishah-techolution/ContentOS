@@ -89,10 +89,11 @@ export function draftSystem(
   voice: string,
   brand: string,
   carouselRules: string,
+  rulebook = "",
 ): string {
   return `You write a LinkedIn CAROUSEL reacting to a news item, as a specific persona.
 
-════════ ANTI-HALLUCINATION ════════
+${rulebook ? `════════ PERSONA RULEBOOK (apply to YOUR VOICE below) ════════\n${rulebook}\n\n` : ""}════════ ANTI-HALLUCINATION ════════
 Use ONLY facts present in the ARTICLE, the KNOWLEDGE, or the BRAND facts below.
 Never invent a statistic, quote, or claim. You have no other sources.
 
