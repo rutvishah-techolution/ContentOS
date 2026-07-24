@@ -54,7 +54,9 @@ HARD RULES:
 - If relevance < 55, or the angle is generic/obvious, mark "skip".
 - Prefer the freshest items; treat anything older than ~3 days as lower priority.
 - De-dupe: if two findings are the same story, keep only the best-sourced one.
-- Assign the best-fit author from the SCOUT PERSONAS.`;
+- Assign the best-fit author from the PERSONAS provided — pick whoever's expertise
+  and voice fit the story best (lean toward the scouts for trend/culture news, but
+  a campaign persona is right when the story is squarely in their lane).`;
 }
 
 export function triageUser(
@@ -63,7 +65,7 @@ export function triageUser(
   digestBlock: string,
   seenList: string,
 ): string {
-  return `SCOUT PERSONAS (choose one personaId as author per item):
+  return `PERSONAS (choose one personaId as the best-fit author per item):
 ${scoutList}
 
 FINDINGS FROM LIVE SEARCH (grouped by beat):

@@ -69,8 +69,10 @@ export interface ScanResult {
 export async function scan(): Promise<ScanResult> {
   const brand = await readWriting("brand-context.md");
   const beats = (await getBeats()).filter((b) => b.active);
-  const personas = (await listPersonas()).filter((p) => p.stream === "scout");
-  const scoutList = personas.map((p) => `- id:"${p.id}" | ${p.name}`).join("\n");
+  const personas = await listPersonas(); // any persona can author a news take
+  const scoutList = personas
+    .map((p) => `- id:"${p.id}" | ${p.name} (${p.stream})`)
+    .join("\n");
   const nameById = new Map(personas.map((p) => [p.id, p.name]));
 
   // 1. live search per beat (parallel)
@@ -173,7 +175,10 @@ export async function scan(): Promise<ScanResult> {
 }
 
 /** Write the light LinkedIn fast-take for one signal. */
-export async function draftSignal(id: string): Promise<Signal> {
+export async function draftSignal(
+  id: string,
+  personaId?: string,
+): Promise<Signal> {
   const s = await readSignal(id);
   if (!s) throw new Error("Signal not found.");
   const [brand, formats, humanizer, knowledge] = await Promise.all([
@@ -183,6 +188,14 @@ export async function draftSignal(id: string): Promise<Signal> {
     getKnowledgeContext(5000),
   ]);
   const personas = await listPersonas();
+  // let the caller pick who writes it (any persona)
+  if (personaId) {
+    const p = personas.find((x) => x.id === personaId);
+    if (p) {
+      s.personaId = p.id;
+      s.personaName = p.name;
+    }
+  }
   const pPath = personas.find((p) => p.id === s.personaId)?.path;
   const voice = pPath ? await readPersonaBody(pPath) : "";
 

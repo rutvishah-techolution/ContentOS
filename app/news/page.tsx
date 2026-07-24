@@ -1,12 +1,18 @@
 import { getBeats } from "@/lib/news/beats";
 import { readSignals } from "@/lib/news/store";
+import { listPersonas } from "@/lib/brain";
 import NewsFeed from "@/components/NewsFeed";
 
 export const dynamic = "force-dynamic";
 
 export default async function NewsPage() {
-  const [beats, signals] = await Promise.all([getBeats(), readSignals()]);
+  const [beats, signals, personas] = await Promise.all([
+    getBeats(),
+    readSignals(),
+    listPersonas(),
+  ]);
   const active = signals.filter((s) => s.status !== "dismissed");
+  const roster = personas.map((p) => ({ id: p.id, name: p.name }));
 
   return (
     <div className="mx-auto max-w-3xl px-8 py-10">
@@ -17,7 +23,7 @@ export default async function NewsPage() {
           worth posting, why, and drafts the urgent ones — you approve.
         </p>
       </div>
-      <NewsFeed initialBeats={beats} initialSignals={active} />
+      <NewsFeed initialBeats={beats} initialSignals={active} personas={roster} />
     </div>
   );
 }

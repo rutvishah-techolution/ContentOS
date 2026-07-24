@@ -10,9 +10,11 @@ import { TS_LABEL, REC_LABEL } from "@/lib/news/types";
 export default function NewsFeed({
   initialBeats,
   initialSignals,
+  personas,
 }: {
   initialBeats: Beat[];
   initialSignals: Signal[];
+  personas: { id: string; name: string }[];
 }) {
   const router = useRouter();
   const [beats, setBeats] = useState<Beat[]>(initialBeats);
@@ -84,7 +86,13 @@ export default function NewsFeed({
         </p>
       ) : (
         ranked.map((s) => (
-          <SignalCard key={s.id} signal={s} onUpdate={update} onRemove={remove} />
+          <SignalCard
+            key={s.id}
+            signal={s}
+            personas={personas}
+            onUpdate={update}
+            onRemove={remove}
+          />
         ))
       )}
     </div>
@@ -105,10 +113,12 @@ function Pill({ children, strong }: { children: React.ReactNode; strong?: boolea
 
 function SignalCard({
   signal,
+  personas,
   onUpdate,
   onRemove,
 }: {
   signal: Signal;
+  personas: { id: string; name: string }[];
   onUpdate: (s: Signal) => void;
   onRemove: (id: string) => void;
 }) {
@@ -116,6 +126,7 @@ function SignalCard({
   const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState(false);
   const [text, setText] = useState(signal.draft?.content || "");
+  const [author, setAuthor] = useState(signal.personaId);
 
   async function call(kind: string, url: string, body?: object) {
     setBusy(kind);
@@ -136,7 +147,9 @@ function SignalCard({
   }
 
   async function draft() {
-    const d = await call("draft", `/api/news/${signal.id}/draft`);
+    const d = await call("draft", `/api/news/${signal.id}/draft`, {
+      personaId: author,
+    });
     if (d?.signal) {
       onUpdate(d.signal);
       setText(d.signal.draft?.content || "");
@@ -226,6 +239,20 @@ function SignalCard({
 
       {/* actions */}
       <div className="mt-3 flex flex-wrap items-center justify-end gap-2">
+        <label className="mr-auto flex items-center gap-1.5 text-xs text-faint">
+          Author
+          <select
+            className="rounded-lg border border-border-strong bg-surface px-2 py-1 text-xs text-fg outline-none"
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+          >
+            {personas.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.name}
+              </option>
+            ))}
+          </select>
+        </label>
         <button className="text-xs text-faint hover:text-fg" onClick={dismiss}>
           Dismiss
         </button>
@@ -235,6 +262,14 @@ function SignalCard({
           </button>
         ) : (
           <>
+            <button
+              className="btn-ghost"
+              onClick={draft}
+              disabled={busy !== null}
+              title="Rewrite the draft (uses the selected author)"
+            >
+              {busy === "draft" ? "Redrafting…" : "↻ Redraft"}
+            </button>
             <button
               className="btn-ghost"
               onClick={() => setOpen((v) => !v)}
