@@ -170,31 +170,33 @@ export default function KnowledgeBase({
         </button>
       </div>
 
-      {/* upload zone (uploads into the current folder) */}
-      <div
-        className="flex cursor-pointer flex-col items-center justify-center rounded-xl border border-dashed border-border bg-surface px-6 py-8 text-center transition hover:border-border-strong"
-        onClick={() => inputRef.current?.click()}
-        onDragOver={(e) => e.preventDefault()}
-        onDrop={(e) => {
-          e.preventDefault();
-          upload(e.dataTransfer.files);
-        }}
-      >
-        <input
-          ref={inputRef}
-          type="file"
-          multiple
-          accept=".pdf,.docx,.doc,.txt,.md"
-          className="hidden"
-          onChange={(e) => upload(e.target.files)}
-        />
-        <div className="text-sm font-medium text-fg">
-          {busy ? "Uploading…" : "Drop a file or click to upload"}
+      {/* upload zone — only inside a folder (root is just for choosing a folder) */}
+      {cur !== "" && (
+        <div
+          className="flex cursor-pointer flex-col items-center justify-center rounded-xl border border-dashed border-border bg-surface px-6 py-8 text-center transition hover:border-border-strong"
+          onClick={() => inputRef.current?.click()}
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            upload(e.dataTransfer.files);
+          }}
+        >
+          <input
+            ref={inputRef}
+            type="file"
+            multiple
+            accept=".pdf,.docx,.doc,.txt,.md"
+            className="hidden"
+            onChange={(e) => upload(e.target.files)}
+          />
+          <div className="text-sm font-medium text-fg">
+            {busy ? "Uploading…" : "Drop a file or click to upload"}
+          </div>
+          <div className="mt-1 text-xs text-faint">
+            into <b>{pretty(cur.split("/").pop() || cur)}</b> · PDF, DOCX, TXT, MD
+          </div>
         </div>
-        <div className="mt-1 text-xs text-faint">
-          into <b>{cur ? pretty(cur.split("/").pop() || cur) : "All files"}</b> · PDF, DOCX, TXT, MD
-        </div>
-      </div>
+      )}
 
       {error && <p className="alert-error">{error}</p>}
 
