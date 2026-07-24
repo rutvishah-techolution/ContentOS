@@ -27,6 +27,8 @@ export async function extractText(
 ): Promise<string> {
   const ext = extOf(filename);
   if (ext === "pdf") {
+    // PDFParse lives on the main entry; serverExternalPackages keeps it unbundled
+    // (bundling it triggers a pdfjs "Object.defineProperty" crash).
     const { PDFParse } = await import("pdf-parse");
     const parser = new PDFParse({ data: new Uint8Array(buffer) });
     try {
