@@ -4,6 +4,8 @@ import { BRAIN_DIR, CAMPAIGNS_DIR, campaignLink } from "@/lib/brain";
 import {
   getDigestIndex,
   normalizeUrl,
+  isRedirectUrl,
+  storySignature,
   DigestItem,
 } from "@/lib/integrations/digest";
 import { fetchUrl } from "@/lib/research/fetchSource";
@@ -62,7 +64,7 @@ async function buildStream(
 
   for (const v of val.verdicts.filter((x) => x.decision !== "STRIP")) {
     const url = v.resolvedSource || v.sourceUrl;
-    if (!url) continue;
+    if (!url || isRedirectUrl(url)) continue; // never index an unresolvable URL
     const key = normalizeUrl(url);
     if (!key) continue;
     if (!byUrl.has(key)) {
@@ -105,8 +107,11 @@ async function buildStream(
     if (!e.title) e.title = slugTitle(e.url) || hostOf(e.url);
   }
 
-  // newest first; unknown dates sink to the bottom
-  return [...byUrl.values()].sort((a, b) => {
+  // newest first; unknown dates sink to the bottom; drop any URL that ended up
+  // (or stayed, on a dead fetch) as an unresolvable redirect
+  return [...byUrl.values()]
+    .filter((e) => !isRedirectUrl(e.url))
+    .sort((a, b) => {
     if (!a.publishedAt && !b.publishedAt) return 0;
     if (!a.publishedAt) return 1;
     if (!b.publishedAt) return -1;
@@ -132,10 +137,14 @@ async function updateLedger(
   } catch {
     /* fresh ledger */
   }
+  // scrub any redirect URLs that were persisted dirty before this fix
+  for (const [k, v] of Object.entries(ledger)) {
+    if (isRedirectUrl(k) || isRedirectUrl(v.url)) delete ledger[k];
+  }
 
   for (const e of entries) {
     const key = normalizeUrl(e.url);
-    if (!key) continue;
+    if (!key || isRedirectUrl(e.url)) continue;
     const cur =
       ledger[key] || ({ title: e.title, url: e.url, campaigns: [] } as LedgerEntry);
     if (!cur.campaigns.includes(slug)) cur.campaigns.push(slug);
@@ -150,6 +159,30 @@ async function updateLedger(
   const map = new Map<string, string[]>();
   for (const [k, v] of Object.entries(ledger)) map.set(k, v.campaigns);
   return map;
+}
+
+/**
+ * Story signatures already covered by OTHER campaigns — used to keep the same
+ * syndicated story (e.g. the MIT/NANDA piece) from recurring across campaigns.
+ * Excludes the current slug so re-running a campaign doesn't self-block.
+ */
+export async function getCoveredStorySignatures(
+  excludeSlug?: string,
+): Promise<Set<string>> {
+  const sigs = new Set<string>();
+  try {
+    const ledger: Record<string, LedgerEntry> = JSON.parse(
+      await fs.readFile(LEDGER, "utf8"),
+    );
+    for (const v of Object.values(ledger)) {
+      if (isRedirectUrl(v.url) || !v.title) continue;
+      const others = (v.campaigns || []).filter((c) => c !== excludeSlug);
+      if (others.length) sigs.add(storySignature(v.title));
+    }
+  } catch {
+    /* no ledger yet */
+  }
+  return sigs;
 }
 
 // ── Persist the per-campaign sources note (readable + machine-readable) ──────

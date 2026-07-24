@@ -11,6 +11,7 @@ import {
   syncDigest,
   getDigestIndex,
   normalizeUrl,
+  storySignature,
 } from "@/lib/integrations/digest";
 import { getBeats } from "@/lib/news/beats";
 import {
@@ -108,6 +109,13 @@ export async function scan(): Promise<ScanResult> {
   // 4. keep actionable items, source-check each
   const created: Signal[] = [];
   const newUrls: string[] = [];
+  // story-level dedup: skip a story already in the feed (even behind a new URL)
+  const activeSigs = new Set(
+    (await readSignals())
+      .filter((s) => s.status !== "dismissed")
+      .map((s) => storySignature(s.headline)),
+  );
+  const batchSigs = new Set<string>();
   let skipped = 0;
   for (const it of items as Record<string, unknown>[]) {
     const rec = String(it.recommendation || "skip") as Recommendation;
@@ -131,6 +139,13 @@ export async function scan(): Promise<ScanResult> {
       skipped++;
       continue;
     }
+    // story-level dedup (syndication behind a different URL)
+    const sig = storySignature(String(it.headline || fetched.title || ""));
+    if (sig && (activeSigs.has(sig) || batchSigs.has(sig))) {
+      skipped++;
+      continue;
+    }
+    if (sig) batchSigs.add(sig);
     const personaId = String(it.personaId || personas[0]?.id || "");
     const beat = beats.find((b) => b.id === String(it.beatId)) || beats[0];
     const s: Signal = {

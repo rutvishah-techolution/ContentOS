@@ -1,6 +1,11 @@
 import { Campaign, PersonaFile } from "@/lib/brain";
-import { DigestItem, getRelevantDigest } from "@/lib/integrations/digest";
+import {
+  DigestItem,
+  getRelevantDigest,
+  storySignature,
+} from "@/lib/integrations/digest";
 import { readPersonaBody } from "@/lib/brain";
+import { getCoveredStorySignatures } from "@/lib/research/sources";
 import { callModel, normalizeModel } from "@/lib/models/router";
 
 const POOL_SIZE = 60; // shared pool of relevant, recent verified articles
@@ -23,22 +28,32 @@ export async function selectArticles(
   campaign: Campaign,
   personas: PersonaFile[],
 ): Promise<SelectionResult> {
-  const pool = await getRelevantDigest(campaign.topic, POOL_SIZE);
+  const rawPool = await getRelevantDigest(campaign.topic, POOL_SIZE);
   const assignments = new Map<string, DigestItem[]>();
   personas.forEach((p) => assignments.set(p.id, []));
 
+  // story-level dedup: drop stories already covered by OTHER campaigns, so a
+  // syndicated piece (e.g. MIT/NANDA) doesn't recur campaign after campaign.
+  const covered = await getCoveredStorySignatures(campaign.slug);
+  const pool = rawPool.filter((a) => !covered.has(storySignature(a.headline)));
   if (pool.length === 0) return { assignments, poolSize: 0 };
 
   const taken = new Set<string>();
+  const takenSig = new Set<string>(); // no two personas take the same story
   const order = rotate(personas);
 
   // Sequential picking with rotating priority: each persona picks from
   // whatever remains, so earlier picks are simply unavailable to later ones.
   for (const persona of order) {
-    const available = pool.filter((a) => !taken.has(a.url));
+    const available = pool.filter(
+      (a) => !taken.has(a.url) && !takenSig.has(storySignature(a.headline)),
+    );
     if (available.length === 0) break;
     const picks = await pickForPersona(campaign, persona, available);
-    for (const a of picks) taken.add(a.url);
+    for (const a of picks) {
+      taken.add(a.url);
+      takenSig.add(storySignature(a.headline));
+    }
     assignments.set(persona.id, picks);
   }
 

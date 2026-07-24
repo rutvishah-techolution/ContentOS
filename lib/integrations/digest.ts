@@ -149,9 +149,36 @@ const STOP = new Set([
   "workshop","three",
 ]);
 
+/** Unresolvable / non-canonical URLs that must never be trusted or shown. */
+export function isRedirectUrl(u: string): boolean {
+  const s = (u || "").toLowerCase();
+  return (
+    s.includes("grounding-api-redirect") ||
+    s.includes("vertexaisearch.cloud.google.com") ||
+    s.includes("news.google.com/rss") ||
+    /\/url\?(sa=|q=)/.test(s) // google redirect
+  );
+}
+
+const SIG_STOP = new Set([
+  "the","and","for","with","that","this","are","from","how","why","what","your",
+  "report","says","said","finds","found","new","now","its","has","will","can",
+]);
+/** Order-independent story signature from a headline — collapses syndicated copies. */
+export function storySignature(headline: string): string {
+  const words = (headline || "").toLowerCase().match(/[a-z0-9]+/g) || [];
+  return [...new Set(words.filter((w) => w.length > 2 && !SIG_STOP.has(w)))]
+    .sort()
+    .slice(0, 12)
+    .join(" ");
+}
+
 async function loadSnapshot(): Promise<DigestItem[]> {
   try {
-    return JSON.parse(await fs.readFile(SNAPSHOT, "utf8"));
+    const items: DigestItem[] = JSON.parse(await fs.readFile(SNAPSHOT, "utf8"));
+    // Fix: drop grounding/redirect URLs at the source so no downstream path
+    // (trusted-digest, selection, sources index) ever sees an unresolvable URL.
+    return items.filter((i) => i.url && !isRedirectUrl(i.url));
   } catch {
     return [];
   }

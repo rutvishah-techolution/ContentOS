@@ -13,7 +13,7 @@ import {
 } from "@/lib/brain";
 import { callClaude } from "@/lib/models/claude";
 import { fetchUrl, FetchResult } from "@/lib/research/fetchSource";
-import { getDigestUrls, normalizeUrl } from "@/lib/integrations/digest";
+import { getDigestUrls, normalizeUrl, isRedirectUrl } from "@/lib/integrations/digest";
 import { buildSourcesIndex } from "@/lib/research/sources";
 import {
   extractFigures,
@@ -139,7 +139,13 @@ async function validateStream(
   const trusted = new Map<number, Verdict>();
   const rest: RawFinding[] = [];
   findings.forEach((f, i) => {
-    if (f.sourceUrl && digestUrls.has(normalizeUrl(f.sourceUrl))) {
+    // trust digest sources — EXCEPT grounding/redirect URLs, which must still be
+    // resolved & source-checked (they'd otherwise ship a dead vertex link).
+    if (
+      f.sourceUrl &&
+      digestUrls.has(normalizeUrl(f.sourceUrl)) &&
+      !isRedirectUrl(f.sourceUrl)
+    ) {
       trusted.set(i, {
         personaId: f.personaId,
         personaName: f.personaName,
